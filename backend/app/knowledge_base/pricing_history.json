@@ -1,0 +1,596 @@
+[
+  {
+    "product_id": "PRD-1001",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1002",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1003",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1004",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1005",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1006",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1007",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1008",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1009",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1010",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1011",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1012",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1013",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1014",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1015",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1016",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1017",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1018",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1019",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1020",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1021",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1022",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1023",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1024",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1025",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1026",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1027",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1028",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1029",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1030",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1031",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1032",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1033",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1034",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1035",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1036",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1037",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1038",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1039",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1040",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1041",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1042",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1043",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1044",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1045",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1046",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1047",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1048",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1049",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1050",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1051",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1052",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1053",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1054",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1055",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1056",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1057",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1058",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1059",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1060",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1061",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1062",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1063",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1064",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1065",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1066",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1067",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1068",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1069",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1070",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1071",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1072",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1073",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1074",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1075",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1076",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1077",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1078",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1079",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1080",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1081",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1082",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1083",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1084",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1085",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1086",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1087",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1088",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1089",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1090",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1091",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1092",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1093",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1094",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1095",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1096",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1097",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1098",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  },
+  {
+    "product_id": "PRD-1099",
+    "original_msrp": 29.99,
+    "promotional_price": 23.99,
+    "elasticity_coefficient": -1.8
+  }
+]

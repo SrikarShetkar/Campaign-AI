@@ -1,0 +1,596 @@
+[
+  {
+    "product_id": "PRD-1001",
+    "warehouse_loc": "US-East-1",
+    "available_units": 18846,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1002",
+    "warehouse_loc": "US-East-1",
+    "available_units": 14251,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1003",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8409,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1004",
+    "warehouse_loc": "US-East-1",
+    "available_units": 10766,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1005",
+    "warehouse_loc": "US-East-1",
+    "available_units": 15710,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1006",
+    "warehouse_loc": "US-East-1",
+    "available_units": 12429,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1007",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19514,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1008",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4573,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1009",
+    "warehouse_loc": "US-East-1",
+    "available_units": 13444,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1010",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8882,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1011",
+    "warehouse_loc": "US-East-1",
+    "available_units": 22381,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1012",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19276,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1013",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19628,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1014",
+    "warehouse_loc": "US-East-1",
+    "available_units": 13949,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1015",
+    "warehouse_loc": "US-East-1",
+    "available_units": 22896,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1016",
+    "warehouse_loc": "US-East-1",
+    "available_units": 7498,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1017",
+    "warehouse_loc": "US-East-1",
+    "available_units": 24733,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1018",
+    "warehouse_loc": "US-East-1",
+    "available_units": 5897,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1019",
+    "warehouse_loc": "US-East-1",
+    "available_units": 18022,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1020",
+    "warehouse_loc": "US-East-1",
+    "available_units": 20034,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1021",
+    "warehouse_loc": "US-East-1",
+    "available_units": 21736,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1022",
+    "warehouse_loc": "US-East-1",
+    "available_units": 12743,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1023",
+    "warehouse_loc": "US-East-1",
+    "available_units": 13263,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1024",
+    "warehouse_loc": "US-East-1",
+    "available_units": 22401,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1025",
+    "warehouse_loc": "US-East-1",
+    "available_units": 22312,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1026",
+    "warehouse_loc": "US-East-1",
+    "available_units": 3896,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1027",
+    "warehouse_loc": "US-East-1",
+    "available_units": 20918,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1028",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19121,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1029",
+    "warehouse_loc": "US-East-1",
+    "available_units": 11947,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1030",
+    "warehouse_loc": "US-East-1",
+    "available_units": 24197,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1031",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4489,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1032",
+    "warehouse_loc": "US-East-1",
+    "available_units": 7597,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1033",
+    "warehouse_loc": "US-East-1",
+    "available_units": 20153,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1034",
+    "warehouse_loc": "US-East-1",
+    "available_units": 14291,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1035",
+    "warehouse_loc": "US-East-1",
+    "available_units": 12823,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1036",
+    "warehouse_loc": "US-East-1",
+    "available_units": 13829,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1037",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19000,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1038",
+    "warehouse_loc": "US-East-1",
+    "available_units": 5624,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1039",
+    "warehouse_loc": "US-East-1",
+    "available_units": 14346,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1040",
+    "warehouse_loc": "US-East-1",
+    "available_units": 17096,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1041",
+    "warehouse_loc": "US-East-1",
+    "available_units": 13310,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1042",
+    "warehouse_loc": "US-East-1",
+    "available_units": 22343,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1043",
+    "warehouse_loc": "US-East-1",
+    "available_units": 7826,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1044",
+    "warehouse_loc": "US-East-1",
+    "available_units": 9049,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1045",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19630,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1046",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8734,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1047",
+    "warehouse_loc": "US-East-1",
+    "available_units": 5181,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1048",
+    "warehouse_loc": "US-East-1",
+    "available_units": 21254,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1049",
+    "warehouse_loc": "US-East-1",
+    "available_units": 9220,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1050",
+    "warehouse_loc": "US-East-1",
+    "available_units": 12192,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1051",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19448,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1052",
+    "warehouse_loc": "US-East-1",
+    "available_units": 20741,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1053",
+    "warehouse_loc": "US-East-1",
+    "available_units": 5004,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1054",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19948,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1055",
+    "warehouse_loc": "US-East-1",
+    "available_units": 3345,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1056",
+    "warehouse_loc": "US-East-1",
+    "available_units": 3818,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1057",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8425,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1058",
+    "warehouse_loc": "US-East-1",
+    "available_units": 19461,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1059",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4130,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1060",
+    "warehouse_loc": "US-East-1",
+    "available_units": 10460,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1061",
+    "warehouse_loc": "US-East-1",
+    "available_units": 14621,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1062",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8195,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1063",
+    "warehouse_loc": "US-East-1",
+    "available_units": 10490,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1064",
+    "warehouse_loc": "US-East-1",
+    "available_units": 6165,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1065",
+    "warehouse_loc": "US-East-1",
+    "available_units": 21880,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1066",
+    "warehouse_loc": "US-East-1",
+    "available_units": 7670,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1067",
+    "warehouse_loc": "US-East-1",
+    "available_units": 12215,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1068",
+    "warehouse_loc": "US-East-1",
+    "available_units": 7144,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1069",
+    "warehouse_loc": "US-East-1",
+    "available_units": 5368,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1070",
+    "warehouse_loc": "US-East-1",
+    "available_units": 24581,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1071",
+    "warehouse_loc": "US-East-1",
+    "available_units": 21931,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1072",
+    "warehouse_loc": "US-East-1",
+    "available_units": 14123,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1073",
+    "warehouse_loc": "US-East-1",
+    "available_units": 20816,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1074",
+    "warehouse_loc": "US-East-1",
+    "available_units": 17181,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1075",
+    "warehouse_loc": "US-East-1",
+    "available_units": 9935,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1076",
+    "warehouse_loc": "US-East-1",
+    "available_units": 3704,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1077",
+    "warehouse_loc": "US-East-1",
+    "available_units": 21255,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1078",
+    "warehouse_loc": "US-East-1",
+    "available_units": 5329,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1079",
+    "warehouse_loc": "US-East-1",
+    "available_units": 7681,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1080",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4074,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1081",
+    "warehouse_loc": "US-East-1",
+    "available_units": 18875,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1082",
+    "warehouse_loc": "US-East-1",
+    "available_units": 12302,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1083",
+    "warehouse_loc": "US-East-1",
+    "available_units": 7070,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1084",
+    "warehouse_loc": "US-East-1",
+    "available_units": 17472,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1085",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8330,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1086",
+    "warehouse_loc": "US-East-1",
+    "available_units": 11672,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1087",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4971,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1088",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4855,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1089",
+    "warehouse_loc": "US-East-1",
+    "available_units": 11690,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1090",
+    "warehouse_loc": "US-East-1",
+    "available_units": 15158,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1091",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4887,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1092",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8443,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1093",
+    "warehouse_loc": "US-East-1",
+    "available_units": 10174,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1094",
+    "warehouse_loc": "US-East-1",
+    "available_units": 4747,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1095",
+    "warehouse_loc": "US-East-1",
+    "available_units": 12890,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1096",
+    "warehouse_loc": "US-East-1",
+    "available_units": 23008,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1097",
+    "warehouse_loc": "US-East-1",
+    "available_units": 13677,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1098",
+    "warehouse_loc": "US-East-1",
+    "available_units": 13876,
+    "reorder_point": 1500
+  },
+  {
+    "product_id": "PRD-1099",
+    "warehouse_loc": "US-East-1",
+    "available_units": 8415,
+    "reorder_point": 1500
+  }
+]

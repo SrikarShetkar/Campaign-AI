@@ -1,0 +1,58 @@
+[
+  {
+    "channel": "Instagram",
+    "cpm": 8.5,
+    "avg_ctr": "2.4%",
+    "top_cpg_categories": [
+      "Skincare",
+      "Cosmetics",
+      "Beverages",
+      "Snacks"
+    ],
+    "best_format": "Reels & Story Ads"
+  },
+  {
+    "channel": "TikTok",
+    "cpm": 6.2,
+    "avg_ctr": "3.1%",
+    "top_cpg_categories": [
+      "Beauty",
+      "Personal Hygiene",
+      "Gen Z Snacks",
+      "Energy Drinks"
+    ],
+    "best_format": "Short Vertical Video"
+  },
+  {
+    "channel": "Amazon Ads",
+    "cpm": 14.8,
+    "avg_ctr": "4.2%",
+    "top_cpg_categories": [
+      "Household Cleaning",
+      "Baby Care",
+      "Packaged Foods",
+      "Coffee"
+    ],
+    "best_format": "Sponsored Products"
+  },
+  {
+    "channel": "YouTube Shorts",
+    "cpm": 7.9,
+    "avg_ctr": "2.1%",
+    "top_cpg_categories": [
+      "Health Drinks",
+      "Hair Care",
+      "Pet Care"
+    ],
+    "best_format": "15s Video Shorts"
+  },
+  {
+    "channel": "Meta Ads",
+    "cpm": 10.2,
+    "avg_ctr": "2.8%",
+    "top_cpg_categories": [
+      "All CPG Categories"
+    ],
+    "best_format": "Carousel & Video"
+  }
+]

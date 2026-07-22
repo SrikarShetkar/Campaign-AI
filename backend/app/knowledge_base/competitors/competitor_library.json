@@ -1,0 +1,26 @@
+[
+  {
+    "id": "comp-301",
+    "company": "Legacy Glow Corp",
+    "campaign": "Eternal Youth 10-Step Kit",
+    "strengths": "Massive retail distribution and 50-year brand recognition.",
+    "weaknesses": "Heavy synthetic preservative reliance, outdated bulky packaging, low Gen-Z appeal.",
+    "positioning": "Traditional legacy luxury beauty."
+  },
+  {
+    "id": "comp-302",
+    "company": "AeroVolt Motors",
+    "campaign": "Electric Thunder 2025",
+    "strengths": "Fast acceleration, widespread Supercharger network.",
+    "weaknesses": "Inconsistent build quality, bland interior minimalism, noisy road cabin.",
+    "positioning": "Mass-market tech EV."
+  },
+  {
+    "id": "comp-303",
+    "company": "FitPulse Legacy",
+    "campaign": "Track Every Step",
+    "strengths": "Low pricing, simple step counting.",
+    "weaknesses": "Weak battery life, lack of predictive AI recovery insights.",
+    "positioning": "Basic budget fitness band."
+  }
+]

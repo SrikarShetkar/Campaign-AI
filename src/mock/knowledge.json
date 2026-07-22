@@ -1,0 +1,37 @@
+[
+  {
+    "id": "kb-1",
+    "title": "Clean Skincare Consumer Behavior 2026",
+    "category": "Consumer Personas",
+    "tags": ["Skincare", "Millennials", "Gen Z", "Eco-Friendly"],
+    "summary": "Detailed behavioral report on how eco-conscious consumers prioritize ingredient transparency over celebrity endorsements."
+  },
+  {
+    "id": "kb-2",
+    "title": "AURA Brand Guidelines & Voice Playbook",
+    "category": "Brand Guidelines",
+    "tags": ["Voice", "Tone", "Logo", "Typography"],
+    "summary": "Official brand identity guidelines for AuraGlow Cosmetics including editorial copywriting rules and hex tokens."
+  },
+  {
+    "id": "kb-3",
+    "title": "EV Charging Anxiety & Range Positioning Framework",
+    "category": "Competitors",
+    "tags": ["Automotive", "Electric Vehicles", "Positioning"],
+    "summary": "Comparative analysis of luxury EV messaging strategies across North American and European premium automotive markets."
+  },
+  {
+    "id": "kb-4",
+    "title": "Q3 & Q4 Global Cultural Festival Playbook",
+    "category": "Festivals",
+    "tags": ["Calendar", "Seasonal", "Global Festivals", "Promotions"],
+    "summary": "Key dates, consumer buying mindsets, and campaign hooks for major global festivals in 2026."
+  },
+  {
+    "id": "kb-5",
+    "title": "PulseFit Bio-Sensors Technical Whitepaper",
+    "category": "Products",
+    "tags": ["Hardware", "AI Telemetry", "Wearables"],
+    "summary": "Comprehensive product architecture specifications for PulseFit AI Pro titanium smartwatch series."
+  }
+]

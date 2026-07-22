@@ -1,0 +1,24 @@
+[
+  {
+    "playbook_id": "PB-01",
+    "name": "The Pre-Festival Flash Sale Blitz",
+    "recommended_discount": "20-30%",
+    "target_roi": 3.8,
+    "key_steps": [
+      "Teaser 7 days prior",
+      "VIP Early Access via SMS",
+      "Limited Time Bundle Countdown"
+    ]
+  },
+  {
+    "playbook_id": "PB-02",
+    "name": "New Product Launch - Creator Seed Strategy",
+    "recommended_discount": "15% Intro Offer",
+    "target_roi": 4.2,
+    "key_steps": [
+      "Send PR boxes to 150 micro-creators",
+      "Launch TikTok Hashtag Challenge",
+      "Retarget engagees with Meta Carousel"
+    ]
+  }
+]

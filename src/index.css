@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: linear-gradient(135deg, #FFF8F8 0%, #F8E8EB 45%, #EBC8D0 100%);
+    color: #4A2E38;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, .font-serif-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #4A2E38;
+  }
+}
+
+/* Soft Luxury Pastel Pink Glass Cards & Elements */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #EDD5DB;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(169, 106, 128, 0.12);
+}
+
+.glass-panel-hover {
+  transition: all 300ms ease;
+}
+.glass-panel-hover:hover {
+  border-color: #A96A80;
+  box-shadow: 0 12px 32px rgba(169, 106, 128, 0.2);
+  transform: translateY(-2px);
+}
+
+.card-luxury {
+  background: #FFFFFF;
+  border: 1px solid #EDD5DB;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(169, 106, 128, 0.12);
+}
+
+.card-luxury-alt {
+  background: #F8E8EB;
+  border: 1px solid #EDD5DB;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(169, 106, 128, 0.08);
+}
+
+/* Buttons matching prompt specification */
+.btn-primary {
+  background-color: #A96A80;
+  color: #FFFFFF;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+.btn-primary:hover {
+  background-color: #945A70;
+  box-shadow: 0 4px 16px rgba(169, 106, 128, 0.25);
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  background-color: #F3D8DE;
+  color: #4A2E38;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+.btn-secondary:hover {
+  background-color: #EBC8D0;
+  transform: scale(1.02);
+}
+
+.text-gradient-rose {
+  background: linear-gradient(90deg, #A96A80 0%, #D89AAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Liquid search container - Soft Luxury Blush */
+.liquid-search-container {
+  position: relative;
+  background: linear-gradient(135deg, #F3D8DE 0%, #EBC8D0 50%, #EDD5DB 100%);
+  padding: 3px;
+  border-radius: 9999px;
+  box-shadow: 0 8px 24px rgba(169, 106, 128, 0.15);
+}
+
+.liquid-search-inner {
+  background: #FFFFFF;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px 6px 20px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8E8EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D89AAA;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A96A80;
+}

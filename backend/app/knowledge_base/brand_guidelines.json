@@ -1,0 +1,32 @@
+[
+  {
+    "brand": "AuraPure",
+    "tone": "Serene, Scientific, Eco-luxurious",
+    "forbidden_words": [
+      "Cheap",
+      "Miracle",
+      "Chemical-free"
+    ],
+    "primary_hex": "#8F7BFF"
+  },
+  {
+    "brand": "NourishGlow",
+    "tone": "Vibrant, Energetic, Empathetic",
+    "forbidden_words": [
+      "Old",
+      "Flawed",
+      "Instant Fix"
+    ],
+    "primary_hex": "#C9B8FF"
+  },
+  {
+    "brand": "VitalRoot",
+    "tone": "Grounding, Organic, Transparent",
+    "forbidden_words": [
+      "Synthetic",
+      "Standard",
+      "Artificial"
+    ],
+    "primary_hex": "#A5B8FF"
+  }
+]

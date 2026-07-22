@@ -1,0 +1,52 @@
+[
+  {
+    "id": "prod-101",
+    "name": "Silk Skin Bio-Peptide Serum",
+    "category": "Skincare & Beauty",
+    "ingredients": ["Bio-Peptide Complex 5%", "Hyaluronic Acid Multi-Weight", "Fermented Camellia Oil", "Niacinamide 3%"],
+    "features": ["72-hour sustained hydration", "Dermatologically non-comedogenic", "100% Recyclable frosted glass bottle", "Instant glass skin radiance"],
+    "benefits": ["Restores damaged skin barrier", "Protects against summer humidity & urban pollution", "Zero-tackiness finish"],
+    "target_audience": "Millennial & Gen-Z eco-conscious luxury consumers aged 24-42",
+    "usp": "World's first zero-tackiness summer bio-peptide hydration serum"
+  },
+  {
+    "id": "prod-102",
+    "name": "Zenith Horizon GT EV",
+    "category": "Automotive & EV",
+    "ingredients": ["800V Silicon Carbide Inverter", "Recycled Alcantara Interior", "Carbon Composite Chassis"],
+    "features": ["0-60 mph in 2.9s", "Biometric keyless iris scan", "450 Mile Total Range", "AI Predictive Suspension"],
+    "benefits": ["Eliminates range anxiety", "10-minute ultra-fast charge yielding 300 miles"],
+    "target_audience": "Tech pioneers & suburban executives aged 30-55",
+    "usp": "Ultra-fast charging Scandinavian luxury electric crossover"
+  },
+  {
+    "id": "prod-103",
+    "name": "PulseFit AI Smartwatch Pro",
+    "category": "Consumer Electronics & Wearables",
+    "ingredients": ["Grade 5 Titanium Case", "Sapphire Crystal Lens", "Dual-band GPS Chipset"],
+    "features": ["14-Day Battery Life", "100m Water Resistance", "Continuous Metabolic Tracking", "Emergency SOS Satellite Uplink"],
+    "benefits": ["Predicts daily stamina recovery window before fatigue hits"],
+    "target_audience": "Athletes, marathon runners, biohackers aged 22-45",
+    "usp": "Aerospace titanium wearable with real-time AI strain recovery scoring"
+  },
+  {
+    "id": "prod-104",
+    "name": "AuraGlow Botanical Cleansing Balm",
+    "category": "Skincare & Beauty",
+    "ingredients": ["Blue Tansy", "Squalane", "Sea Buckthorn Oil"],
+    "features": ["Melt-away makeup formula", "Zero residue", "Soothing anti-inflammatory"],
+    "benefits": ["Deep pore detox without stripping natural skin oils"],
+    "target_audience": "Urban professionals with sensitive skin",
+    "usp": "Waterless botanical cleansing balm with active blue tansy"
+  },
+  {
+    "id": "prod-105",
+    "name": "Zenith Spark Urban Commuter E-Bike",
+    "category": "Automotive & EV",
+    "ingredients": ["Torque Sensor", "Removable Samsung Battery", "Belt Drive"],
+    "features": ["60 Mile Range", "Integrated GPS Anti-Theft", "Invisible Frame Battery"],
+    "benefits": ["Effortless city transit without sweating or parking hassles"],
+    "target_audience": "Metro commuters and eco-conscious city dwellers",
+    "usp": "Whisper-quiet carbon belt drive urban e-bike with integrated GPS tracking"
+  }
+]

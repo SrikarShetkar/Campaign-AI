@@ -1,0 +1,17 @@
+[
+  {
+    "region": "North America",
+    "top_preferred_channel": "TikTok & Amazon",
+    "eco_sensitivity": "High"
+  },
+  {
+    "region": "Europe",
+    "top_preferred_channel": "Instagram & Retail Media",
+    "eco_sensitivity": "Very High"
+  },
+  {
+    "region": "Asia Pacific",
+    "top_preferred_channel": "Live Shopping & Social Messaging",
+    "eco_sensitivity": "Medium-High"
+  }
+]

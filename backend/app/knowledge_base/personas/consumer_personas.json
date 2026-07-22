@@ -1,0 +1,35 @@
+[
+  {
+    "id": "per-101",
+    "name": "Eco-Conscious Executive Emma",
+    "age": "26-38",
+    "gender": "Female / Non-Binary",
+    "interests": ["Clean Beauty", "Sustainable Fashion", "Pilates", "Specialty Coffee"],
+    "motivation": "Seeks high-performance luxury skincare that is ethically sourced and non-comedogenic.",
+    "pain_points": "Harsh synthetic chemicals, sticky summer formulas, lack of brand transparency.",
+    "shopping_behavior": "Researches ingredient lists on TikTok/Reddit before purchasing on mobile web.",
+    "preferred_platforms": ["Instagram", "TikTok", "Pinterest", "Substack"]
+  },
+  {
+    "id": "per-102",
+    "name": "Tech Pioneer Tyler",
+    "age": "30-52",
+    "gender": "Male / All",
+    "interests": ["Clean Energy", "Autonomous Mobility", "Smart Home Tech", "Architecture"],
+    "motivation": "Desires state-of-the-art sustainable EV tech without sacrificing design elegance.",
+    "pain_points": "Range anxiety, slow charging speeds, outdated automotive interior infotainment.",
+    "shopping_behavior": "Attends tech expos, reads technical whitepapers, pre-orders online directly.",
+    "preferred_platforms": ["X (Twitter)", "YouTube", "LinkedIn", "Tech Blogs"]
+  },
+  {
+    "id": "per-103",
+    "name": "Marathon Runner Maya",
+    "age": "22-38",
+    "gender": "Female / All",
+    "interests": ["Endurance Sports", "HRV Biohacking", "Cold Plunge", "Plant-based Nutrition"],
+    "motivation": "Optimizes physical recovery windows using telemetry biometrics.",
+    "pain_points": "Inaccurate smartwatch sensors, weak battery life during ultra-marathons.",
+    "shopping_behavior": "Buys through athletic community recommendations and athlete sponsorships.",
+    "preferred_platforms": ["Strava", "Instagram", "TikTok", "YouTube Shorts"]
+  }
+]

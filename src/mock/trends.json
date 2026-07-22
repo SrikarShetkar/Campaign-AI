@@ -1,0 +1,55 @@
+{
+  "trendingKeywords": [
+    { "keyword": "#BioPeptideGlow", "growth": "+340%", "volume": "1.4M", "sentiment": "98% Positive" },
+    { "keyword": "#CleanBeautySummer", "growth": "+185%", "volume": "980K", "sentiment": "94% Positive" },
+    { "keyword": "#RangeAnxietyFree", "growth": "+420%", "volume": "620K", "sentiment": "91% Positive" },
+    { "keyword": "#AIStaminaRecovery", "growth": "+210%", "volume": "840K", "sentiment": "96% Positive" },
+    { "keyword": "#ZeroTackHydration", "growth": "+150%", "volume": "340K", "sentiment": "99% Positive" }
+  ],
+  "festivals": [
+    {
+      "name": "Global Climate & Clean Energy Week",
+      "date": "Aug 12 - Aug 18, 2026",
+      "opportunityScore": 96,
+      "recommendedAngle": "Emphasize zero-waste packaging and carbon-neutral EV efficiency."
+    },
+    {
+      "name": "International Skincare & Wellness Month",
+      "date": "Sep 01 - Sep 30, 2026",
+      "opportunityScore": 99,
+      "recommendedAngle": "Highlight post-summer skin barrier restoration with bio-peptides."
+    },
+    {
+      "name": "Tech Innovators Summit 2026",
+      "date": "Oct 14 - Oct 17, 2026",
+      "opportunityScore": 92,
+      "recommendedAngle": "Showcase real-time biometric AI tracking & autonomous driving features."
+    }
+  ],
+  "trendCards": [
+    {
+      "id": "tr-1",
+      "title": "Minimalist 2-Step Skincare Routine",
+      "category": "Consumer Skincare Shift",
+      "momentum": 98,
+      "description": "Consumers are abandoning 10-step routines in favor of high-performance multi-functional serums.",
+      "impact": "High High-Ticket Conversion"
+    },
+    {
+      "id": "tr-2",
+      "title": "AI Bio-Recovery Telemetry",
+      "category": "Wearables & Health Tech",
+      "momentum": 94,
+      "description": "Demand for predictive stamina scoring over simple step counting has surged by 280%.",
+      "impact": "High Premium Subscription Potential"
+    },
+    {
+      "id": "tr-3",
+      "title": "Hyper-Speed Charging EV Positioning",
+      "category": "Electric Vehicles",
+      "momentum": 91,
+      "description": "Buying intent increases 4.2x when charging speed is framed as '10-minute coffee stop range'.",
+      "impact": "Transformational Pre-order Surge"
+    }
+  ]
+}

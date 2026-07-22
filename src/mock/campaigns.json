@@ -1,0 +1,145 @@
+[
+  {
+    "id": "cmp-101",
+    "name": "AuraGlow Silk Skin Summer Launch",
+    "brand": "AuraGlow Cosmetics",
+    "category": "Skincare & Beauty",
+    "status": "Active",
+    "createdAt": "2026-07-15",
+    "tagline": "Radiate Elegance. Powered by Bio-Peptides.",
+    "executiveSummary": "A high-conversion multi-channel campaign highlighting bio-peptide hydration for eco-conscious Millennials & Gen-Z beauty enthusiasts.",
+    "campaignScore": 94,
+    "trendScore": 98,
+    "virality": 91,
+    "projectedRoi": "4.8x",
+    "targetReach": "1.2M",
+    "budget": "$45,000",
+    "duration": "30 Days",
+    "persona": {
+      "name": "Eco-Conscious Executive Emma",
+      "age": "26 - 38",
+      "interests": "Clean Beauty, Sustainable Fashion, Wellness Tech",
+      "painPoint": "Harsh synthetic ingredients causing skin sensitivity during summer heat."
+    },
+    "story": "Emma wakes up early, navigates a busy corporate day, and seeks effortless skincare that protects against urban pollution while maintaining an effortless glass-skin glow.",
+    "socialPosts": [
+      {
+        "platform": "Instagram",
+        "copy": "✨ Ditch 10-step routines for 1 pure peptide drop. Meet AuraGlow Silk Skin—summer hydration reimagined. 🌿 #GlassSkin #CleanBeauty #AuraGlow",
+        "engagementEstimate": "48.2k interactions"
+      },
+      {
+        "platform": "TikTok",
+        "copy": "POV: You found the ONLY bio-peptide serum that doesn't feel sticky in 90° weather 🔥 Hydration level: 1000/10. Link in bio! 💧 #BeautyTok",
+        "engagementEstimate": "125.4k views"
+      },
+      {
+        "platform": "LinkedIn",
+        "copy": "Sustainable innovation meets luxury formulation. AuraGlow Cosmetics introduces zero-waste bio-peptide serum designed for active modern leaders.",
+        "engagementEstimate": "3.4k impressions"
+      }
+    ],
+    "emailSequence": [
+      {
+        "subject": "Exclusive First Access: Summer's Most Anticipated Glow",
+        "previewText": "Pure bio-peptides. Unmatched summer hydration.",
+        "body": "Hi {{FirstName}},\n\nSummer heat shouldn't mean compromised skin hydration. AuraGlow is thrilled to present our flagship Silk Skin Peptide Serum..."
+      }
+    ],
+    "posterPrompt": "Hyper-realistic bottle of iridescent glass skincare serum resting on wet volcanic stone surrounded by soft lavender orchids, cinematic lighting, 8k resolution, minimalist luxury aesthetic.",
+    "videoPrompt": "15-second dynamic advert showing macro droplet falling in slow-motion onto glowing skin, transitioning to a confident woman walking down a sunny city avenue.",
+    "suggestions": [
+      "Boost TikTok budget by 15% to capitalize on trending skincare hashtags.",
+      "Pair with summer glow influencer micro-gifting strategy.",
+      "A/B test champagne gold vs soft aqua CTA button colors on landing page."
+    ]
+  },
+  {
+    "id": "cmp-102",
+    "name": "Zenith Horizon Electric SUV Reveal",
+    "brand": "Zenith Motors",
+    "category": "Automotive & EV",
+    "status": "Scheduled",
+    "createdAt": "2026-07-18",
+    "tagline": "Unleash Pure Energy. Zero Compromise.",
+    "executiveSummary": "Luxury EV pre-order campaign leveraging interactive AR web experiences and high-impact festival sponsorship.",
+    "campaignScore": 89,
+    "trendScore": 92,
+    "virality": 87,
+    "projectedRoi": "5.2x",
+    "targetReach": "2.8M",
+    "budget": "$150,000",
+    "duration": "45 Days",
+    "persona": {
+      "name": "Tech Pioneer Tyler",
+      "age": "32 - 50",
+      "interests": "Clean Energy, Smart Home Automation, Autonomous Tech",
+      "painPoint": "Range anxiety and slow charging speeds in legacy luxury vehicles."
+    },
+    "story": "Tyler values sustainable technology without giving up performance and ultra-sleek Scandinavian design.",
+    "socialPosts": [
+      {
+        "platform": "X (Twitter)",
+        "copy": "0-60 in 2.9 seconds. 450 miles range. 10-minute ultra-charge. The future of electric luxury is here. Reserve Zenith Horizon today. ⚡ #ZenithHorizon",
+        "engagementEstimate": "89.1k impressions"
+      }
+    ],
+    "emailSequence": [
+      {
+        "subject": "The wait is over: Zenith Horizon pre-orders are open",
+        "previewText": "Experience the world's fastest charging luxury SUV.",
+        "body": "Dear Partner,\n\nWe are ushering in a new paradigm of electric mobility..."
+      }
+    ],
+    "posterPrompt": "Futuristic matte black electric SUV speeding on a desert highway at twilight with neon blue aerodynamic trails behind it, photorealistic.",
+    "videoPrompt": "Dramatic cockpit startup sequence featuring futuristic HUD display, whisper-quiet acceleration onto scenic coastal cliff road.",
+    "suggestions": [
+      "Add interactive range simulator to the campaign landing page.",
+      "Coordinate VIP test-drive invitations for tech conference attendees."
+    ]
+  },
+  {
+    "id": "cmp-103",
+    "name": "PulseFit AI Smartwatch Pro",
+    "brand": "PulseFit Tech",
+    "category": "Consumer Electronics",
+    "status": "Completed",
+    "createdAt": "2026-06-20",
+    "tagline": "Your Biometric Sentinel. Always Ahead.",
+    "executiveSummary": "Fitness tracking campaign showcasing real-time AI strain recovery and bio-metabolism monitoring.",
+    "campaignScore": 92,
+    "trendScore": 88,
+    "virality": 95,
+    "projectedRoi": "4.1x",
+    "targetReach": "950K",
+    "budget": "$35,000",
+    "duration": "21 Days",
+    "persona": {
+      "name": "Marathon Runner Maya",
+      "age": "22 - 40",
+      "interests": "Biohacking, Endurance Sports, Sleep Optimization",
+      "painPoint": "Inaccurate heart rate spikes during high-intensity training."
+    },
+    "story": "Maya trains for endurance and requires precise continuous bio-data without constant battery recharges.",
+    "socialPosts": [
+      {
+        "platform": "Instagram",
+        "copy": "Train smarter, recover faster. PulseFit Pro uses predictive AI to calculate your exact stamina recovery window. 💪 #Biohacking",
+        "engagementEstimate": "34.7k likes"
+      }
+    ],
+    "emailSequence": [
+      {
+        "subject": "Unlock Peak Performance with AI Recovery Tracking",
+        "previewText": "Meet your personal AI fitness strategist.",
+        "body": "Hey Athlete,\n\nTraining hard is only half the battle. Recovery is where champions are built..."
+      }
+    ],
+    "posterPrompt": "Close-up shot of titanium smartwatch on athletic wrist with glowing holographic biometric overlay displaying real-time heart rate and stamina metrics.",
+    "videoPrompt": "Split-screen video showing athlete running in rain while watch face dynamically displays neural AI feedback loops.",
+    "suggestions": [
+      "Retarget workout video viewers with 10% discount promo codes.",
+      "Integrate Strava community challenge partnership."
+    ]
+  }
+]

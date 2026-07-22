@@ -1,0 +1,48 @@
+{
+  "winnerVersion": "Version A",
+  "reason": "Highest emotional resonance score and superior projected ROI (4.8x vs 3.6x).",
+  "versions": [
+    {
+      "id": "ver-a",
+      "name": "Version A: Scientific Luxury Glow",
+      "tagline": "Radiate Elegance. Powered by Bio-Peptides.",
+      "tone": "Sophisticated & Science-Backed",
+      "primaryAngle": "Bio-Peptide Innovation + Eco-friendly luxury",
+      "campaignScore": 94,
+      "projectedRoi": "4.8x",
+      "viralityScore": 92,
+      "ctrEstimate": "5.4%",
+      "estimatedCpc": "$0.68",
+      "bestChannel": "Instagram Reels & TikTok",
+      "keyMessage": "Single drop glass-skin radiance designed for active modern leaders."
+    },
+    {
+      "id": "ver-b",
+      "name": "Version B: Minimalist Clean Routine",
+      "tagline": "Ditch 10 Steps. Hydrate in 14 Seconds.",
+      "tone": "Direct & Punchy Minimalist",
+      "primaryAngle": "Time-saving multi-benefit routine simplify",
+      "campaignScore": 88,
+      "projectedRoi": "3.9x",
+      "viralityScore": 89,
+      "ctrEstimate": "4.2%",
+      "estimatedCpc": "$0.82",
+      "bestChannel": "Google Search & Meta Feed",
+      "keyMessage": "Replace cluttered cabinets with one clinically proven peptide serum."
+    },
+    {
+      "id": "ver-c",
+      "name": "Version C: Summer Shield Hydration",
+      "tagline": "Beat Summer Heat. Zero Sticky Residue.",
+      "tone": "Vibrant, Energetic & Seasonal",
+      "primaryAngle": "Summer humidity protection + cooling peptide feel",
+      "campaignScore": 85,
+      "projectedRoi": "3.6x",
+      "viralityScore": 86,
+      "ctrEstimate": "3.8%",
+      "estimatedCpc": "$0.95",
+      "bestChannel": "TikTok & Influencer Shorts",
+      "keyMessage": "Keep your summer glow without the grease."
+    }
+  ]
+}

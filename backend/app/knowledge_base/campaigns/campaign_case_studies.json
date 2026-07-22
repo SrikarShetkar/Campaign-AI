@@ -1,0 +1,29 @@
+[
+  {
+    "id": "cs-201",
+    "industry": "Skincare & Beauty",
+    "campaign_name": "Glow Beyond Synthetic",
+    "strategy": "Micro-influencer video seeding paired with AIDA emotional storytelling on Instagram Reels and TikTok.",
+    "channels": ["Instagram Reels", "TikTok", "Google Search Ads"],
+    "slogan": "Pure Bio-Peptides. Zero Synthetic Clutter.",
+    "results": "Achieved 4.8x ROI, 1.4M impression reach, 5.4% average CTR, and 48,000 unit sales within 30 days."
+  },
+  {
+    "id": "cs-202",
+    "industry": "Automotive & EV",
+    "campaign_name": "10-Minute Coffee Charge",
+    "strategy": "Framed charging speed in relatable human lifestyle terms rather than technical kilowatts.",
+    "channels": ["YouTube 4K Shorts", "LinkedIn Thought Leadership", "Billboard"],
+    "slogan": "Charge Faster Than Your Morning Espresso.",
+    "results": "Generated 12,400 vehicle pre-orders, 5.2x ROI multiplier, and 89% positive sentiment surge."
+  },
+  {
+    "id": "cs-203",
+    "industry": "Consumer Electronics & Wearables",
+    "campaign_name": "Train Smarter, Recover Faster",
+    "strategy": "Challenge-based Strava community integration with real-time bio-recovery leaderboard.",
+    "channels": ["Instagram Feed", "TikTok FitnessTok", "Email Automation"],
+    "slogan": "Your Biometric Sentinel. Always Ahead.",
+    "results": "35,000 units sold in pre-order window, 4.1x ROI, 125,000 video views."
+  }
+]

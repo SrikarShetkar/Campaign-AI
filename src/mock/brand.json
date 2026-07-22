@@ -1,0 +1,21 @@
+{
+  "brandName": "AuraGlow Cosmetics",
+  "detectedTone": "Sophisticated, Empathetic, Science-Driven, Refined",
+  "detectedStyle": "Minimalist Glassmorphic, Modern Editorial, Soft Pastel Glow",
+  "vocabularyRules": {
+    "doUse": ["Bio-Peptides", "Glass-Skin Radiance", "Micro-Encapsulated", "Clean Efficacy", "Sustained Moisture Lock"],
+    "dontUse": ["Cheap Miracle", "Instant Cure", "Chemical Free", "Anti-Aging", "Heavy Cream"]
+  },
+  "logoRules": [
+    "Maintain minimum clear space equivalent to 1.5x logo height.",
+    "Use champagne gold logo mark on dark glass surfaces.",
+    "Do not alter typography spacing or stretch logo mark."
+  ],
+  "colorPalette": [
+    { "name": "Primary Gradient Start", "hex": "#8F7BFF" },
+    { "name": "Primary Gradient End", "hex": "#C9B8FF" },
+    { "name": "Deep Onyx", "hex": "#111116" },
+    { "name": "Champagne Gold Accent", "hex": "#F3D382" },
+    { "name": "Soft Lavender Accent", "hex": "#9D8CFF" }
+  ]
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "category": "Food",
+    "sub_categories": [
+      "Food Premium",
+      "Food Eco",
+      "Food Daily"
+    ],
+    "annual_growth_rate": "13.4%"
+  },
+  {
+    "category": "Beverages",
+    "sub_categories": [
+      "Beverages Premium",
+      "Beverages Eco",
+      "Beverages Daily"
+    ],
+    "annual_growth_rate": "6.7%"
+  },
+  {
+    "category": "Skincare",
+    "sub_categories": [
+      "Skincare Premium",
+      "Skincare Eco",
+      "Skincare Daily"
+    ],
+    "annual_growth_rate": "9.4%"
+  },
+  {
+    "category": "Cosmetics",
+    "sub_categories": [
+      "Cosmetics Premium",
+      "Cosmetics Eco",
+      "Cosmetics Daily"
+    ],
+    "annual_growth_rate": "10.8%"
+  },
+  {
+    "category": "Hair Care",
+    "sub_categories": [
+      "Hair Care Premium",
+      "Hair Care Eco",
+      "Hair Care Daily"
+    ],
+    "annual_growth_rate": "12.6%"
+  },
+  {
+    "category": "Oral Care",
+    "sub_categories": [
+      "Oral Care Premium",
+      "Oral Care Eco",
+      "Oral Care Daily"
+    ],
+    "annual_growth_rate": "14.1%"
+  },
+  {
+    "category": "Household Cleaning",
+    "sub_categories": [
+      "Household Cleaning Premium",
+      "Household Cleaning Eco",
+      "Household Cleaning Daily"
+    ],
+    "annual_growth_rate": "9.7%"
+  },
+  {
+    "category": "Laundry",
+    "sub_categories": [
+      "Laundry Premium",
+      "Laundry Eco",
+      "Laundry Daily"
+    ],
+    "annual_growth_rate": "11.8%"
+  },
+  {
+    "category": "Baby Care",
+    "sub_categories": [
+      "Baby Care Premium",
+      "Baby Care Eco",
+      "Baby Care Daily"
+    ],
+    "annual_growth_rate": "11.3%"
+  },
+  {
+    "category": "Health Drinks",
+    "sub_categories": [
+      "Health Drinks Premium",
+      "Health Drinks Eco",
+      "Health Drinks Daily"
+    ],
+    "annual_growth_rate": "12.8%"
+  },
+  {
+    "category": "Packaged Foods",
+    "sub_categories": [
+      "Packaged Foods Premium",
+      "Packaged Foods Eco",
+      "Packaged Foods Daily"
+    ],
+    "annual_growth_rate": "8.5%"
+  },
+  {
+    "category": "Personal Hygiene",
+    "sub_categories": [
+      "Personal Hygiene Premium",
+      "Personal Hygiene Eco",
+      "Personal Hygiene Daily"
+    ],
+    "annual_growth_rate": "13.5%"
+  },
+  {
+    "category": "Frozen Foods",
+    "sub_categories": [
+      "Frozen Foods Premium",
+      "Frozen Foods Eco",
+      "Frozen Foods Daily"
+    ],
+    "annual_growth_rate": "12.9%"
+  },
+  {
+    "category": "Dairy",
+    "sub_categories": [
+      "Dairy Premium",
+      "Dairy Eco",
+      "Dairy Daily"
+    ],
+    "annual_growth_rate": "9.1%"
+  },
+  {
+    "category": "Snacks",
+    "sub_categories": [
+      "Snacks Premium",
+      "Snacks Eco",
+      "Snacks Daily"
+    ],
+    "annual_growth_rate": "5.4%"
+  },
+  {
+    "category": "Tea",
+    "sub_categories": [
+      "Tea Premium",
+      "Tea Eco",
+      "Tea Daily"
+    ],
+    "annual_growth_rate": "5.4%"
+  },
+  {
+    "category": "Coffee",
+    "sub_categories": [
+      "Coffee Premium",
+      "Coffee Eco",
+      "Coffee Daily"
+    ],
+    "annual_growth_rate": "6.5%"
+  },
+  {
+    "category": "Energy Drinks",
+    "sub_categories": [
+      "Energy Drinks Premium",
+      "Energy Drinks Eco",
+      "Energy Drinks Daily"
+    ],
+    "annual_growth_rate": "8.1%"
+  },
+  {
+    "category": "Spices",
+    "sub_categories": [
+      "Spices Premium",
+      "Spices Eco",
+      "Spices Daily"
+    ],
+    "annual_growth_rate": "9.4%"
+  },
+  {
+    "category": "Cooking Oils",
+    "sub_categories": [
+      "Cooking Oils Premium",
+      "Cooking Oils Eco",
+      "Cooking Oils Daily"
+    ],
+    "annual_growth_rate": "6.3%"
+  },
+  {
+    "category": "Pet Care",
+    "sub_categories": [
+      "Pet Care Premium",
+      "Pet Care Eco",
+      "Pet Care Daily"
+    ],
+    "annual_growth_rate": "5.9%"
+  }
+]

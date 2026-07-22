@@ -1,0 +1,2290 @@
+[
+  {
+    "competitor_id": "CMPTR-4001",
+    "target_brand": "BreezeClean",
+    "competitor_name": "PureHarvest Co (1)",
+    "category": "Beverages",
+    "market_share_percent": 11.1,
+    "average_price_point": 48.95,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 1569514
+  },
+  {
+    "competitor_id": "CMPTR-4002",
+    "target_brand": "CrispHarvest",
+    "competitor_name": "GlowGurus (2)",
+    "category": "Skincare",
+    "market_share_percent": 6.7,
+    "average_price_point": 69.63,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 1987180
+  },
+  {
+    "competitor_id": "CMPTR-4003",
+    "target_brand": "VelvetDew",
+    "competitor_name": "EcoClean Global (3)",
+    "category": "Cosmetics",
+    "market_share_percent": 8.2,
+    "average_price_point": 36.21,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.0,
+    "social_followers": 1277751
+  },
+  {
+    "competitor_id": "CMPTR-4004",
+    "target_brand": "BotanicaHerbs",
+    "competitor_name": "NutriLife (4)",
+    "category": "Hair Care",
+    "market_share_percent": 19.0,
+    "average_price_point": 68.81,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 1823567
+  },
+  {
+    "competitor_id": "CMPTR-4005",
+    "target_brand": "SolaceHome",
+    "competitor_name": "Zenith Beauty (5)",
+    "category": "Oral Care",
+    "market_share_percent": 13.1,
+    "average_price_point": 11.59,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 164573
+  },
+  {
+    "competitor_id": "CMPTR-4006",
+    "target_brand": "SolaceHome",
+    "competitor_name": "VelvetBlend (6)",
+    "category": "Household Cleaning",
+    "market_share_percent": 7.7,
+    "average_price_point": 67.7,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 1661762
+  },
+  {
+    "competitor_id": "CMPTR-4007",
+    "target_brand": "CrispHarvest",
+    "competitor_name": "ApexCPG (7)",
+    "category": "Laundry",
+    "market_share_percent": 19.0,
+    "average_price_point": 43.12,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 306697
+  },
+  {
+    "competitor_id": "CMPTR-4008",
+    "target_brand": "AquaVita",
+    "competitor_name": "OrganicEssence (8)",
+    "category": "Baby Care",
+    "market_share_percent": 5.5,
+    "average_price_point": 31.57,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 828934
+  },
+  {
+    "competitor_id": "CMPTR-4009",
+    "target_brand": "SolaceHome",
+    "competitor_name": "VitalityLabs (9)",
+    "category": "Health Drinks",
+    "market_share_percent": 9.6,
+    "average_price_point": 14.17,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 1410286
+  },
+  {
+    "competitor_id": "CMPTR-4010",
+    "target_brand": "PureDairy",
+    "competitor_name": "LuxeBio (10)",
+    "category": "Packaged Foods",
+    "market_share_percent": 12.9,
+    "average_price_point": 21.85,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 774600
+  },
+  {
+    "competitor_id": "CMPTR-4011",
+    "target_brand": "RadiantSkin",
+    "competitor_name": "PureHarvest Co (11)",
+    "category": "Personal Hygiene",
+    "market_share_percent": 8.8,
+    "average_price_point": 62.36,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.1,
+    "social_followers": 668662
+  },
+  {
+    "competitor_id": "CMPTR-4012",
+    "target_brand": "SolaceHome",
+    "competitor_name": "GlowGurus (12)",
+    "category": "Frozen Foods",
+    "market_share_percent": 7.3,
+    "average_price_point": 45.64,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.8,
+    "social_followers": 1931962
+  },
+  {
+    "competitor_id": "CMPTR-4013",
+    "target_brand": "BotanicaHerbs",
+    "competitor_name": "EcoClean Global (13)",
+    "category": "Dairy",
+    "market_share_percent": 12.3,
+    "average_price_point": 18.65,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 1632288
+  },
+  {
+    "competitor_id": "CMPTR-4014",
+    "target_brand": "SpiceCraft",
+    "competitor_name": "NutriLife (14)",
+    "category": "Snacks",
+    "market_share_percent": 7.7,
+    "average_price_point": 42.94,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 916237
+  },
+  {
+    "competitor_id": "CMPTR-4015",
+    "target_brand": "RadiantSkin",
+    "competitor_name": "Zenith Beauty (15)",
+    "category": "Tea",
+    "market_share_percent": 7.8,
+    "average_price_point": 47.93,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 630337
+  },
+  {
+    "competitor_id": "CMPTR-4016",
+    "target_brand": "FreshBlend",
+    "competitor_name": "VelvetBlend (16)",
+    "category": "Coffee",
+    "market_share_percent": 15.9,
+    "average_price_point": 24.46,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 2163718
+  },
+  {
+    "competitor_id": "CMPTR-4017",
+    "target_brand": "PrimePaws",
+    "competitor_name": "ApexCPG (17)",
+    "category": "Energy Drinks",
+    "market_share_percent": 16.0,
+    "average_price_point": 37.85,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 2218507
+  },
+  {
+    "competitor_id": "CMPTR-4018",
+    "target_brand": "GlowEssence",
+    "competitor_name": "OrganicEssence (18)",
+    "category": "Spices",
+    "market_share_percent": 23.9,
+    "average_price_point": 50.97,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 1453451
+  },
+  {
+    "competitor_id": "CMPTR-4019",
+    "target_brand": "FreshBlend",
+    "competitor_name": "VitalityLabs (19)",
+    "category": "Cooking Oils",
+    "market_share_percent": 19.4,
+    "average_price_point": 27.43,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 2251281
+  },
+  {
+    "competitor_id": "CMPTR-4020",
+    "target_brand": "PeakFuel",
+    "competitor_name": "LuxeBio (20)",
+    "category": "Pet Care",
+    "market_share_percent": 19.3,
+    "average_price_point": 42.66,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 401516
+  },
+  {
+    "competitor_id": "CMPTR-4021",
+    "target_brand": "RadiantSkin",
+    "competitor_name": "PureHarvest Co (21)",
+    "category": "Food",
+    "market_share_percent": 15.7,
+    "average_price_point": 40.9,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 1368146
+  },
+  {
+    "competitor_id": "CMPTR-4022",
+    "target_brand": "AquaVita",
+    "competitor_name": "GlowGurus (22)",
+    "category": "Beverages",
+    "market_share_percent": 17.5,
+    "average_price_point": 61.38,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 2036799
+  },
+  {
+    "competitor_id": "CMPTR-4023",
+    "target_brand": "GlowEssence",
+    "competitor_name": "EcoClean Global (23)",
+    "category": "Skincare",
+    "market_share_percent": 15.7,
+    "average_price_point": 41.89,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.1,
+    "social_followers": 715993
+  },
+  {
+    "competitor_id": "CMPTR-4024",
+    "target_brand": "BotanicaHerbs",
+    "competitor_name": "NutriLife (24)",
+    "category": "Cosmetics",
+    "market_share_percent": 20.9,
+    "average_price_point": 50.65,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.0,
+    "social_followers": 2260267
+  },
+  {
+    "competitor_id": "CMPTR-4025",
+    "target_brand": "CrispHarvest",
+    "competitor_name": "Zenith Beauty (25)",
+    "category": "Hair Care",
+    "market_share_percent": 6.5,
+    "average_price_point": 21.84,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 596257
+  },
+  {
+    "competitor_id": "CMPTR-4026",
+    "target_brand": "SolaceHome",
+    "competitor_name": "VelvetBlend (26)",
+    "category": "Oral Care",
+    "market_share_percent": 18.4,
+    "average_price_point": 21.79,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 667506
+  },
+  {
+    "competitor_id": "CMPTR-4027",
+    "target_brand": "PrimePaws",
+    "competitor_name": "ApexCPG (27)",
+    "category": "Household Cleaning",
+    "market_share_percent": 5.6,
+    "average_price_point": 63.06,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 2105610
+  },
+  {
+    "competitor_id": "CMPTR-4028",
+    "target_brand": "BotanicaHerbs",
+    "competitor_name": "OrganicEssence (28)",
+    "category": "Laundry",
+    "market_share_percent": 15.9,
+    "average_price_point": 77.77,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 289940
+  },
+  {
+    "competitor_id": "CMPTR-4029",
+    "target_brand": "LuminaCare",
+    "competitor_name": "VitalityLabs (29)",
+    "category": "Baby Care",
+    "market_share_percent": 6.7,
+    "average_price_point": 71.69,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 1174932
+  },
+  {
+    "competitor_id": "CMPTR-4030",
+    "target_brand": "SilkStrand",
+    "competitor_name": "LuxeBio (30)",
+    "category": "Health Drinks",
+    "market_share_percent": 11.8,
+    "average_price_point": 48.29,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.1,
+    "social_followers": 484384
+  },
+  {
+    "competitor_id": "CMPTR-4031",
+    "target_brand": "BotanicaHerbs",
+    "competitor_name": "PureHarvest Co (31)",
+    "category": "Packaged Foods",
+    "market_share_percent": 23.1,
+    "average_price_point": 9.55,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 801498
+  },
+  {
+    "competitor_id": "CMPTR-4032",
+    "target_brand": "VelvetDew",
+    "competitor_name": "GlowGurus (32)",
+    "category": "Personal Hygiene",
+    "market_share_percent": 4.1,
+    "average_price_point": 21.78,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.8,
+    "social_followers": 2435044
+  },
+  {
+    "competitor_id": "CMPTR-4033",
+    "target_brand": "SilkStrand",
+    "competitor_name": "EcoClean Global (33)",
+    "category": "Frozen Foods",
+    "market_share_percent": 3.8,
+    "average_price_point": 79.77,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 1717322
+  },
+  {
+    "competitor_id": "CMPTR-4034",
+    "target_brand": "CrispHarvest",
+    "competitor_name": "NutriLife (34)",
+    "category": "Dairy",
+    "market_share_percent": 13.7,
+    "average_price_point": 14.49,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 349695
+  },
+  {
+    "competitor_id": "CMPTR-4035",
+    "target_brand": "SolaceHome",
+    "competitor_name": "Zenith Beauty (35)",
+    "category": "Snacks",
+    "market_share_percent": 13.0,
+    "average_price_point": 71.97,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.7,
+    "social_followers": 387159
+  },
+  {
+    "competitor_id": "CMPTR-4036",
+    "target_brand": "NatureFeast",
+    "competitor_name": "VelvetBlend (36)",
+    "category": "Tea",
+    "market_share_percent": 22.4,
+    "average_price_point": 40.63,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.7,
+    "social_followers": 95215
+  },
+  {
+    "competitor_id": "CMPTR-4037",
+    "target_brand": "NourishGlow",
+    "competitor_name": "ApexCPG (37)",
+    "category": "Coffee",
+    "market_share_percent": 9.5,
+    "average_price_point": 23.07,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 1974506
+  },
+  {
+    "competitor_id": "CMPTR-4038",
+    "target_brand": "VelvetDew",
+    "competitor_name": "OrganicEssence (38)",
+    "category": "Energy Drinks",
+    "market_share_percent": 8.7,
+    "average_price_point": 28.85,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 524511
+  },
+  {
+    "competitor_id": "CMPTR-4039",
+    "target_brand": "SolaceHome",
+    "competitor_name": "VitalityLabs (39)",
+    "category": "Spices",
+    "market_share_percent": 6.8,
+    "average_price_point": 28.77,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 1063620
+  },
+  {
+    "competitor_id": "CMPTR-4040",
+    "target_brand": "SilkStrand",
+    "competitor_name": "LuxeBio (40)",
+    "category": "Cooking Oils",
+    "market_share_percent": 3.6,
+    "average_price_point": 24.77,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.7,
+    "social_followers": 1718068
+  },
+  {
+    "competitor_id": "CMPTR-4041",
+    "target_brand": "RadiantSkin",
+    "competitor_name": "PureHarvest Co (41)",
+    "category": "Pet Care",
+    "market_share_percent": 8.8,
+    "average_price_point": 20.09,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 2357042
+  },
+  {
+    "competitor_id": "CMPTR-4042",
+    "target_brand": "RadiantSkin",
+    "competitor_name": "GlowGurus (42)",
+    "category": "Food",
+    "market_share_percent": 5.7,
+    "average_price_point": 51.85,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 1987841
+  },
+  {
+    "competitor_id": "CMPTR-4043",
+    "target_brand": "PureDairy",
+    "competitor_name": "EcoClean Global (43)",
+    "category": "Beverages",
+    "market_share_percent": 6.7,
+    "average_price_point": 62.82,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 414932
+  },
+  {
+    "competitor_id": "CMPTR-4044",
+    "target_brand": "VelvetDew",
+    "competitor_name": "NutriLife (44)",
+    "category": "Skincare",
+    "market_share_percent": 21.8,
+    "average_price_point": 17.36,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 250311
+  },
+  {
+    "competitor_id": "CMPTR-4045",
+    "target_brand": "LuminaCare",
+    "competitor_name": "Zenith Beauty (45)",
+    "category": "Cosmetics",
+    "market_share_percent": 23.5,
+    "average_price_point": 48.98,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 1855425
+  },
+  {
+    "competitor_id": "CMPTR-4046",
+    "target_brand": "PureDairy",
+    "competitor_name": "VelvetBlend (46)",
+    "category": "Hair Care",
+    "market_share_percent": 12.1,
+    "average_price_point": 37.04,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 1952608
+  },
+  {
+    "competitor_id": "CMPTR-4047",
+    "target_brand": "VelvetDew",
+    "competitor_name": "ApexCPG (47)",
+    "category": "Oral Care",
+    "market_share_percent": 14.8,
+    "average_price_point": 30.55,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 1160546
+  },
+  {
+    "competitor_id": "CMPTR-4048",
+    "target_brand": "PeakFuel",
+    "competitor_name": "OrganicEssence (48)",
+    "category": "Household Cleaning",
+    "market_share_percent": 18.9,
+    "average_price_point": 50.62,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 52393
+  },
+  {
+    "competitor_id": "CMPTR-4049",
+    "target_brand": "GlowEssence",
+    "competitor_name": "VitalityLabs (49)",
+    "category": "Laundry",
+    "market_share_percent": 21.1,
+    "average_price_point": 39.86,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 2126858
+  },
+  {
+    "competitor_id": "CMPTR-4050",
+    "target_brand": "FreshBlend",
+    "competitor_name": "LuxeBio (50)",
+    "category": "Baby Care",
+    "market_share_percent": 18.9,
+    "average_price_point": 69.09,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 2338581
+  },
+  {
+    "competitor_id": "CMPTR-4051",
+    "target_brand": "AuraPure",
+    "competitor_name": "PureHarvest Co (51)",
+    "category": "Health Drinks",
+    "market_share_percent": 17.1,
+    "average_price_point": 74.48,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.8,
+    "social_followers": 770402
+  },
+  {
+    "competitor_id": "CMPTR-4052",
+    "target_brand": "PeakFuel",
+    "competitor_name": "GlowGurus (52)",
+    "category": "Packaged Foods",
+    "market_share_percent": 4.5,
+    "average_price_point": 22.21,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.7,
+    "social_followers": 1305326
+  },
+  {
+    "competitor_id": "CMPTR-4053",
+    "target_brand": "ZenBite",
+    "competitor_name": "EcoClean Global (53)",
+    "category": "Personal Hygiene",
+    "market_share_percent": 16.2,
+    "average_price_point": 28.83,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 195101
+  },
+  {
+    "competitor_id": "CMPTR-4054",
+    "target_brand": "BreezeClean",
+    "competitor_name": "NutriLife (54)",
+    "category": "Frozen Foods",
+    "market_share_percent": 8.1,
+    "average_price_point": 72.8,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.8,
+    "social_followers": 1087109
+  },
+  {
+    "competitor_id": "CMPTR-4055",
+    "target_brand": "AquaVita",
+    "competitor_name": "Zenith Beauty (55)",
+    "category": "Dairy",
+    "market_share_percent": 7.1,
+    "average_price_point": 76.97,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.1,
+    "social_followers": 220863
+  },
+  {
+    "competitor_id": "CMPTR-4056",
+    "target_brand": "PureSprout",
+    "competitor_name": "VelvetBlend (56)",
+    "category": "Snacks",
+    "market_share_percent": 20.1,
+    "average_price_point": 73.31,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.1,
+    "social_followers": 299055
+  },
+  {
+    "competitor_id": "CMPTR-4057",
+    "target_brand": "EcoSparkle",
+    "competitor_name": "ApexCPG (57)",
+    "category": "Tea",
+    "market_share_percent": 16.2,
+    "average_price_point": 60.78,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.0,
+    "social_followers": 190048
+  },
+  {
+    "competitor_id": "CMPTR-4058",
+    "target_brand": "ZenBite",
+    "competitor_name": "OrganicEssence (58)",
+    "category": "Coffee",
+    "market_share_percent": 21.0,
+    "average_price_point": 50.23,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 1244693
+  },
+  {
+    "competitor_id": "CMPTR-4059",
+    "target_brand": "PureDairy",
+    "competitor_name": "VitalityLabs (59)",
+    "category": "Energy Drinks",
+    "market_share_percent": 19.6,
+    "average_price_point": 53.28,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 730321
+  },
+  {
+    "competitor_id": "CMPTR-4060",
+    "target_brand": "LuminaCare",
+    "competitor_name": "LuxeBio (60)",
+    "category": "Spices",
+    "market_share_percent": 20.9,
+    "average_price_point": 36.97,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 604749
+  },
+  {
+    "competitor_id": "CMPTR-4061",
+    "target_brand": "AuraPure",
+    "competitor_name": "PureHarvest Co (61)",
+    "category": "Cooking Oils",
+    "market_share_percent": 20.1,
+    "average_price_point": 10.88,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 2308069
+  },
+  {
+    "competitor_id": "CMPTR-4062",
+    "target_brand": "VelvetBrew",
+    "competitor_name": "GlowGurus (62)",
+    "category": "Pet Care",
+    "market_share_percent": 8.2,
+    "average_price_point": 17.96,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 429441
+  },
+  {
+    "competitor_id": "CMPTR-4063",
+    "target_brand": "VelvetDew",
+    "competitor_name": "EcoClean Global (63)",
+    "category": "Food",
+    "market_share_percent": 21.5,
+    "average_price_point": 13.07,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 1697614
+  },
+  {
+    "competitor_id": "CMPTR-4064",
+    "target_brand": "RadiantSkin",
+    "competitor_name": "NutriLife (64)",
+    "category": "Beverages",
+    "market_share_percent": 22.1,
+    "average_price_point": 52.42,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 286734
+  },
+  {
+    "competitor_id": "CMPTR-4065",
+    "target_brand": "EcoSparkle",
+    "competitor_name": "Zenith Beauty (65)",
+    "category": "Skincare",
+    "market_share_percent": 6.4,
+    "average_price_point": 77.65,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 2067972
+  },
+  {
+    "competitor_id": "CMPTR-4066",
+    "target_brand": "SolaceHome",
+    "competitor_name": "VelvetBlend (66)",
+    "category": "Cosmetics",
+    "market_share_percent": 9.8,
+    "average_price_point": 35.38,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 112442
+  },
+  {
+    "competitor_id": "CMPTR-4067",
+    "target_brand": "NatureFeast",
+    "competitor_name": "ApexCPG (67)",
+    "category": "Hair Care",
+    "market_share_percent": 7.2,
+    "average_price_point": 64.01,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 2425474
+  },
+  {
+    "competitor_id": "CMPTR-4068",
+    "target_brand": "AquaVita",
+    "competitor_name": "OrganicEssence (68)",
+    "category": "Oral Care",
+    "market_share_percent": 22.0,
+    "average_price_point": 33.26,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 808378
+  },
+  {
+    "competitor_id": "CMPTR-4069",
+    "target_brand": "NatureFeast",
+    "competitor_name": "VitalityLabs (69)",
+    "category": "Household Cleaning",
+    "market_share_percent": 12.6,
+    "average_price_point": 58.9,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 1023578
+  },
+  {
+    "competitor_id": "CMPTR-4070",
+    "target_brand": "SnackSphere",
+    "competitor_name": "LuxeBio (70)",
+    "category": "Laundry",
+    "market_share_percent": 11.7,
+    "average_price_point": 76.02,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 683947
+  },
+  {
+    "competitor_id": "CMPTR-4071",
+    "target_brand": "SpiceCraft",
+    "competitor_name": "PureHarvest Co (71)",
+    "category": "Baby Care",
+    "market_share_percent": 21.0,
+    "average_price_point": 53.69,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.0,
+    "social_followers": 481533
+  },
+  {
+    "competitor_id": "CMPTR-4072",
+    "target_brand": "PureSprout",
+    "competitor_name": "GlowGurus (72)",
+    "category": "Health Drinks",
+    "market_share_percent": 17.9,
+    "average_price_point": 72.21,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 1008686
+  },
+  {
+    "competitor_id": "CMPTR-4073",
+    "target_brand": "AuraPure",
+    "competitor_name": "EcoClean Global (73)",
+    "category": "Packaged Foods",
+    "market_share_percent": 3.6,
+    "average_price_point": 51.1,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.7,
+    "social_followers": 1372904
+  },
+  {
+    "competitor_id": "CMPTR-4074",
+    "target_brand": "PureSprout",
+    "competitor_name": "NutriLife (74)",
+    "category": "Personal Hygiene",
+    "market_share_percent": 9.0,
+    "average_price_point": 22.55,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.8,
+    "social_followers": 1015829
+  },
+  {
+    "competitor_id": "CMPTR-4075",
+    "target_brand": "RadiantSkin",
+    "competitor_name": "Zenith Beauty (75)",
+    "category": "Frozen Foods",
+    "market_share_percent": 10.8,
+    "average_price_point": 31.55,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 635415
+  },
+  {
+    "competitor_id": "CMPTR-4076",
+    "target_brand": "EcoSparkle",
+    "competitor_name": "VelvetBlend (76)",
+    "category": "Dairy",
+    "market_share_percent": 15.4,
+    "average_price_point": 16.45,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 257070
+  },
+  {
+    "competitor_id": "CMPTR-4077",
+    "target_brand": "GlowEssence",
+    "competitor_name": "ApexCPG (77)",
+    "category": "Snacks",
+    "market_share_percent": 21.0,
+    "average_price_point": 43.43,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 635766
+  },
+  {
+    "competitor_id": "CMPTR-4078",
+    "target_brand": "CrispHarvest",
+    "competitor_name": "OrganicEssence (78)",
+    "category": "Tea",
+    "market_share_percent": 13.1,
+    "average_price_point": 78.13,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 1104130
+  },
+  {
+    "competitor_id": "CMPTR-4079",
+    "target_brand": "PureSprout",
+    "competitor_name": "VitalityLabs (79)",
+    "category": "Coffee",
+    "market_share_percent": 6.6,
+    "average_price_point": 15.62,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.0,
+    "social_followers": 1116914
+  },
+  {
+    "competitor_id": "CMPTR-4080",
+    "target_brand": "VelvetBrew",
+    "competitor_name": "LuxeBio (80)",
+    "category": "Energy Drinks",
+    "market_share_percent": 19.9,
+    "average_price_point": 31.8,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 806370
+  },
+  {
+    "competitor_id": "CMPTR-4081",
+    "target_brand": "SnackSphere",
+    "competitor_name": "PureHarvest Co (81)",
+    "category": "Spices",
+    "market_share_percent": 22.5,
+    "average_price_point": 9.52,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 223842
+  },
+  {
+    "competitor_id": "CMPTR-4082",
+    "target_brand": "BotanicaHerbs",
+    "competitor_name": "GlowGurus (82)",
+    "category": "Cooking Oils",
+    "market_share_percent": 13.6,
+    "average_price_point": 36.13,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 926482
+  },
+  {
+    "competitor_id": "CMPTR-4083",
+    "target_brand": "ZenBite",
+    "competitor_name": "EcoClean Global (83)",
+    "category": "Pet Care",
+    "market_share_percent": 19.0,
+    "average_price_point": 50.8,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.2,
+    "social_followers": 449612
+  },
+  {
+    "competitor_id": "CMPTR-4084",
+    "target_brand": "FreshBlend",
+    "competitor_name": "NutriLife (84)",
+    "category": "Food",
+    "market_share_percent": 21.4,
+    "average_price_point": 75.93,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.1,
+    "social_followers": 2327094
+  },
+  {
+    "competitor_id": "CMPTR-4085",
+    "target_brand": "SpiceCraft",
+    "competitor_name": "Zenith Beauty (85)",
+    "category": "Beverages",
+    "market_share_percent": 9.4,
+    "average_price_point": 39.75,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.7,
+    "social_followers": 1448982
+  },
+  {
+    "competitor_id": "CMPTR-4086",
+    "target_brand": "VelvetBrew",
+    "competitor_name": "VelvetBlend (86)",
+    "category": "Skincare",
+    "market_share_percent": 13.8,
+    "average_price_point": 64.68,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.3,
+    "social_followers": 2321156
+  },
+  {
+    "competitor_id": "CMPTR-4087",
+    "target_brand": "VelvetDew",
+    "competitor_name": "ApexCPG (87)",
+    "category": "Cosmetics",
+    "market_share_percent": 23.4,
+    "average_price_point": 31.76,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 2054147
+  },
+  {
+    "competitor_id": "CMPTR-4088",
+    "target_brand": "PureSprout",
+    "competitor_name": "OrganicEssence (88)",
+    "category": "Hair Care",
+    "market_share_percent": 11.8,
+    "average_price_point": 21.19,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.0,
+    "social_followers": 2072724
+  },
+  {
+    "competitor_id": "CMPTR-4089",
+    "target_brand": "PureSprout",
+    "competitor_name": "VitalityLabs (89)",
+    "category": "Oral Care",
+    "market_share_percent": 17.0,
+    "average_price_point": 64.29,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.0,
+    "social_followers": 958932
+  },
+  {
+    "competitor_id": "CMPTR-4090",
+    "target_brand": "VelvetBrew",
+    "competitor_name": "LuxeBio (90)",
+    "category": "Household Cleaning",
+    "market_share_percent": 21.4,
+    "average_price_point": 61.33,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 1693286
+  },
+  {
+    "competitor_id": "CMPTR-4091",
+    "target_brand": "VelvetDew",
+    "competitor_name": "PureHarvest Co (91)",
+    "category": "Laundry",
+    "market_share_percent": 14.9,
+    "average_price_point": 21.25,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.7,
+    "social_followers": 495810
+  },
+  {
+    "competitor_id": "CMPTR-4092",
+    "target_brand": "SilkStrand",
+    "competitor_name": "GlowGurus (92)",
+    "category": "Baby Care",
+    "market_share_percent": 7.3,
+    "average_price_point": 60.77,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 1307769
+  },
+  {
+    "competitor_id": "CMPTR-4093",
+    "target_brand": "SolaceHome",
+    "competitor_name": "EcoClean Global (93)",
+    "category": "Health Drinks",
+    "market_share_percent": 7.0,
+    "average_price_point": 38.18,
+    "positioning": "Direct-to-Consumer Disruptor",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 806149
+  },
+  {
+    "competitor_id": "CMPTR-4094",
+    "target_brand": "VelvetBrew",
+    "competitor_name": "NutriLife (94)",
+    "category": "Packaged Foods",
+    "market_share_percent": 3.8,
+    "average_price_point": 69.42,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 1080472
+  },
+  {
+    "competitor_id": "CMPTR-4095",
+    "target_brand": "CrispHarvest",
+    "competitor_name": "Zenith Beauty (95)",
+    "category": "Personal Hygiene",
+    "market_share_percent": 5.3,
+    "average_price_point": 49.44,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 106391
+  },
+  {
+    "competitor_id": "CMPTR-4096",
+    "target_brand": "PeakFuel",
+    "competitor_name": "VelvetBlend (96)",
+    "category": "Frozen Foods",
+    "market_share_percent": 17.9,
+    "average_price_point": 38.63,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 1909687
+  },
+  {
+    "competitor_id": "CMPTR-4097",
+    "target_brand": "NourishGlow",
+    "competitor_name": "ApexCPG (97)",
+    "category": "Dairy",
+    "market_share_percent": 6.3,
+    "average_price_point": 37.28,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.7,
+    "social_followers": 1487350
+  },
+  {
+    "competitor_id": "CMPTR-4098",
+    "target_brand": "NourishGlow",
+    "competitor_name": "OrganicEssence (98)",
+    "category": "Snacks",
+    "market_share_percent": 23.2,
+    "average_price_point": 34.64,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 3.9,
+    "social_followers": 2051580
+  },
+  {
+    "competitor_id": "CMPTR-4099",
+    "target_brand": "LuminaCare",
+    "competitor_name": "VitalityLabs (99)",
+    "category": "Tea",
+    "market_share_percent": 16.8,
+    "average_price_point": 10.32,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 259305
+  },
+  {
+    "competitor_id": "CMPTR-4100",
+    "target_brand": "SnackSphere",
+    "competitor_name": "LuxeBio (100)",
+    "category": "Coffee",
+    "market_share_percent": 19.1,
+    "average_price_point": 49.81,
+    "positioning": "Mass Market Value",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.1,
+    "social_followers": 892183
+  },
+  {
+    "competitor_id": "CMPTR-4101",
+    "target_brand": "SilkStrand",
+    "competitor_name": "PureHarvest Co (101)",
+    "category": "Energy Drinks",
+    "market_share_percent": 16.2,
+    "average_price_point": 18.54,
+    "positioning": "Dermatology Grade",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 442780
+  },
+  {
+    "competitor_id": "CMPTR-4102",
+    "target_brand": "VitalRoot",
+    "competitor_name": "GlowGurus (102)",
+    "category": "Spices",
+    "market_share_percent": 23.0,
+    "average_price_point": 24.77,
+    "positioning": "Premium Clean",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.5,
+    "social_followers": 1811070
+  },
+  {
+    "competitor_id": "CMPTR-4103",
+    "target_brand": "AuraPure",
+    "competitor_name": "EcoClean Global (103)",
+    "category": "Cooking Oils",
+    "market_share_percent": 22.6,
+    "average_price_point": 19.18,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.4,
+    "social_followers": 1393732
+  },
+  {
+    "competitor_id": "CMPTR-4104",
+    "target_brand": "NatureFeast",
+    "competitor_name": "NutriLife (104)",
+    "category": "Pet Care",
+    "market_share_percent": 9.3,
+    "average_price_point": 16.86,
+    "positioning": "Ultra-Luxury Organic",
+    "strengths": [
+      "Strong TikTok virality",
+      "Deep retail distribution",
+      "Aggressive subscription discount",
+      "High customer loyalty"
+    ],
+    "weaknesses": [
+      "Higher price sensitivity",
+      "Slower shipping times",
+      "Limited product shade/flavor range"
+    ],
+    "rating": 4.6,
+    "social_followers": 280237
+  }
+]

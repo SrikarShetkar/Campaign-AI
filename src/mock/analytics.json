@@ -1,0 +1,41 @@
+{
+  "kpis": {
+    "campaignScore": 94,
+    "trendScore": 98,
+    "viralityRate": "92.4%",
+    "projectedRoi": "4.8x",
+    "totalReach": "4.8M",
+    "savedCampaignsCount": 38
+  },
+  "budgetAllocation": [
+    { "name": "Meta (IG/FB)", "value": 40, "color": "#8F7BFF" },
+    { "name": "TikTok Ads", "value": 25, "color": "#67E8F9" },
+    { "name": "Google Search", "value": 20, "color": "#F3D382" },
+    { "name": "Influencer Gifting", "value": 15, "color": "#6EE7B7" }
+  ],
+  "timelinePerformance": [
+    { "day": "Week 1", "impressions": 450000, "conversions": 12400, "roi": 2.1 },
+    { "day": "Week 2", "impressions": 890000, "conversions": 28900, "roi": 3.4 },
+    { "day": "Week 3", "impressions": 1450000, "conversions": 54200, "roi": 4.2 },
+    { "day": "Week 4", "impressions": 2100000, "conversions": 89000, "roi": 4.8 }
+  ],
+  "marketingFunnel": [
+    { "stage": "Brand Awareness", "count": 2800000, "dropoff": "0%" },
+    { "stage": "Engagement & Clicks", "count": 620000, "dropoff": "-77.8%" },
+    { "stage": "Add to Cart / Lead", "count": 145000, "dropoff": "-76.6%" },
+    { "stage": "Final Conversion", "count": 48500, "dropoff": "-66.5%" }
+  ],
+  "campaignTrendRadar": [
+    { "attribute": "Virality Potential", "AuraGlow": 94, "IndustryAvg": 65 },
+    { "attribute": "Brand Alignment", "AuraGlow": 98, "IndustryAvg": 72 },
+    { "attribute": "Audience Resonance", "AuraGlow": 91, "IndustryAvg": 68 },
+    { "attribute": "Channel Fit", "AuraGlow": 96, "IndustryAvg": 70 },
+    { "attribute": "Creative Innovation", "AuraGlow": 92, "IndustryAvg": 60 }
+  ],
+  "channelBreakdown": [
+    { "channel": "Instagram", "clicks": 184000, "ctr": "4.8%", "cpc": "$0.84", "conversions": 19400 },
+    { "channel": "TikTok", "clicks": 245000, "ctr": "6.2%", "cpc": "$0.52", "conversions": 18200 },
+    { "channel": "Google Search", "clicks": 98000, "ctr": "8.1%", "cpc": "$1.45", "conversions": 8900 },
+    { "channel": "Email Campaign", "clicks": 93000, "ctr": "12.4%", "cpc": "$0.12", "conversions": 2000 }
+  ]
+}

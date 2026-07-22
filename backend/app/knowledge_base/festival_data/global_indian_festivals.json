@@ -1,0 +1,37 @@
+[
+  {
+    "festival": "Diwali Festival of Lights",
+    "region": "India & Global Diaspora",
+    "timing": "October / November",
+    "consumer_mindset": "Highest annual buying propensity for premium gifts, luxury skincare, electronics, and automotive upgrades.",
+    "recommended_hooks": "Glow with Prosperity, Gifting Premium Innovation, Radiate Brightness."
+  },
+  {
+    "festival": "Global Climate & Clean Energy Week",
+    "region": "Global (US / EU / APAC)",
+    "timing": "August",
+    "consumer_mindset": "Eco-conscious buying surges, high sensitivity to zero-waste packaging and carbon reduction.",
+    "recommended_hooks": "Zero Compromise Clean Future, Sustainable Performance."
+  },
+  {
+    "festival": "International Skincare & Wellness Month",
+    "region": "Global",
+    "timing": "September",
+    "consumer_mindset": "Post-summer skin repair and routine reset season.",
+    "recommended_hooks": "Barrier Restoration, 72-Hour Peptide Lock."
+  },
+  {
+    "festival": "Holi Color Festival",
+    "region": "India & Global",
+    "timing": "March",
+    "consumer_mindset": "Vibrant celebration, pre-and-post skin protection demand.",
+    "recommended_hooks": "Protect Your Glow, Express Bold Colors."
+  },
+  {
+    "festival": "Christmas & New Year Holiday Season",
+    "region": "Global",
+    "timing": "December",
+    "consumer_mindset": "Peak gifting spree, premium subscription signups.",
+    "recommended_hooks": "Unwrap Extraordinary Glow, Give The Gift Of Peak Performance."
+  }
+]

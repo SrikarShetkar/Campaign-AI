@@ -1,0 +1,43 @@
+[
+  {
+    "festival_name": "Diwali",
+    "peak_period": "October - November",
+    "high_demand_categories": [
+      "Sweets & Packaged Foods",
+      "Skincare",
+      "Gift Sets",
+      "Beverages"
+    ],
+    "avg_sales_multiplier": 2.8
+  },
+  {
+    "festival_name": "Black Friday & Cyber Monday",
+    "peak_period": "Late November",
+    "high_demand_categories": [
+      "Beauty Bundles",
+      "Electronics CPG",
+      "Pet Care Supply"
+    ],
+    "avg_sales_multiplier": 3.4
+  },
+  {
+    "festival_name": "Christmas & Holiday Season",
+    "peak_period": "December",
+    "high_demand_categories": [
+      "Gourmet Food",
+      "Fine Tea/Coffee",
+      "Luxury Cosmetics"
+    ],
+    "avg_sales_multiplier": 3.1
+  },
+  {
+    "festival_name": "Summer Wellness Blitz",
+    "peak_period": "June - July",
+    "high_demand_categories": [
+      "Hydration Drinks",
+      "Sunscreen & Skincare",
+      "Frozen Snacks"
+    ],
+    "avg_sales_multiplier": 2.2
+  }
+]

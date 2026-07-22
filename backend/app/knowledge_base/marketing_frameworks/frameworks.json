@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fw-1",
+    "name": "AIDA Framework",
+    "full_name": "Attention, Interest, Desire, Action",
+    "description": "Guides consumer through 4 psychological milestones: grabbing attention with bold hooks, sparking interest with product science, triggering desire with lifestyle transformations, and driving immediate action with clear CTAs."
+  },
+  {
+    "id": "fw-2",
+    "name": "StoryBrand 7-Part Framework",
+    "full_name": "Clarify Your Message",
+    "description": "Positions the customer as the hero, the problem as the villain, the brand as the trusted guide giving a clear plan, and calls them to action to avoid failure and achieve triumph."
+  },
+  {
+    "id": "fw-3",
+    "name": "Jobs-to-be-Done (JTBD)",
+    "full_name": "Core Customer Progress",
+    "description": "Focuses on the emotional and functional job the customer hires the product to accomplish (e.g. 'I hire bio-peptide serum to look radiant at corporate presentations without breaking out')."
+  },
+  {
+    "id": "fw-4",
+    "name": "STP Marketing Strategy",
+    "full_name": "Segmentation, Targeting, Positioning",
+    "description": "Divides market into distinct buyer segments, targets high-value niches, and crafts uncontested brand positioning."
+  },
+  {
+    "id": "fw-5",
+    "name": "Blue Ocean Strategy",
+    "full_name": "Creating Uncontested Market Space",
+    "description": "Makes competition irrelevant by creating a leap in value for buyers and the company, breaking the value-cost trade-off."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "trend_id": "TRD-01",
+    "name": "Clean Label & Transparent Sourcing",
+    "impact_score": 9.4,
+    "description": "84% of CPG buyers scrutinize product ingredients, demanding non-toxic and zero artificial additives."
+  },
+  {
+    "trend_id": "TRD-02",
+    "name": "Micro-Moments & TikTok Commerce",
+    "impact_score": 9.1,
+    "description": "Instant impulse purchases via TikTok Shop and Instagram Checkout for sub-$30 CPG items."
+  },
+  {
+    "trend_id": "TRD-03",
+    "name": "Refillable & Plastic-Free Packaging",
+    "impact_score": 8.8,
+    "description": "Consumer preference for zero-waste packaging in household cleaning, shampoos, and personal hygiene."
+  },
+  {
+    "trend_id": "TRD-04",
+    "name": "Functional Beverages & Gut Health",
+    "impact_score": 9.5,
+    "description": "Surge in prebiotic sodas, kombucha, and adaptogenic teas over traditional high-sugar energy drinks."
+  }
+]

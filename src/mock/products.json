@@ -1,0 +1,47 @@
+[
+  {
+    "id": "prod-1",
+    "name": "Silk Skin Peptide Serum",
+    "brand": "AuraGlow Cosmetics",
+    "category": "Skincare",
+    "description": "Ultra-concentrated bio-peptide hydration serum engineered for immediate glass skin finish and 72-hour moisture lock.",
+    "ingredients": ["Bio-Peptide Complex 5%", "Hyaluronic Acid Multi-Weight", "Fermented Camellia Oil", "Niacinamide 3%"],
+    "usp": "World's first zero-tackiness summer peptide formulation with micro-encapsulated ocean kelp.",
+    "features": [
+      "72-hour sustained hydration",
+      "Dermatologically non-comedogenic",
+      "100% Recyclable frosted glass bottle",
+      "Instant skin radiance within 14 seconds"
+    ]
+  },
+  {
+    "id": "prod-2",
+    "name": "Zenith Horizon GT EV",
+    "brand": "Zenith Motors",
+    "category": "Automotive",
+    "description": "Next-generation dual-motor electric crossover with autonomous cruise matrix and ceramic battery architecture.",
+    "ingredients": ["800V Silicon Carbide Inverter", "Recycled Alcantara Interior", "Carbon Composite Chassis"],
+    "usp": "10-minute ultra-fast charge capability yielding 300 miles of driving range.",
+    "features": [
+      "0-60 mph in 2.9 seconds",
+      "Biometric keyless iris scan",
+      "450 Mile Total Range",
+      "AI Predictive Suspension"
+    ]
+  },
+  {
+    "id": "prod-3",
+    "name": "PulseFit AI Pro",
+    "brand": "PulseFit Tech",
+    "category": "Wearables",
+    "description": "Aerospace-grade titanium smartwatch featuring continuous ECG, lactate threshold prediction, and AI recovery advice.",
+    "ingredients": ["Grade 5 Titanium Case", "Sapphire Crystal Lens", "Dual-band GPS Chipset"],
+    "usp": "Real-time AI strain recovery scoring that predicts fatigue before it impacts performance.",
+    "features": [
+      "14-Day Battery Life",
+      "100m Water Resistance",
+      "Continuous Metabolic Tracking",
+      "Emergency SOS Satellite Uplink"
+    ]
+  }
+]

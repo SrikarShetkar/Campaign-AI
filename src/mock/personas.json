@@ -1,0 +1,50 @@
+[
+  {
+    "id": "per-1",
+    "name": "Eco-Conscious Executive Emma",
+    "age": "28 - 42",
+    "gender": "Female / Non-Binary",
+    "income": "$110,000 - $180,000 / year",
+    "location": "Urban Metro (New York, San Francisco, London)",
+    "occupation": "Tech VP / Creative Director / Sustainability Lead",
+    "lifestyle": "Active, mindful consumption, Pilates enthusiast, specialty coffee lover",
+    "interests": ["Clean Beauty", "Biohacking", "Ethical Investing", "Scandinavian Interior Design"],
+    "painPoints": [
+      "Overwhelmed by complex skincare routines",
+      "Skincare products that break out sensitive skin in summer humidity",
+      "Lack of ingredient transparency from legacy luxury brands"
+    ]
+  },
+  {
+    "id": "per-2",
+    "name": "Tech Pioneer Tyler",
+    "age": "30 - 52",
+    "gender": "Male / All",
+    "income": "$150,000 - $350,000 / year",
+    "location": "Suburban Tech Hubs (Austin, Seattle, Boulder)",
+    "occupation": "Software Architect / Founder / Engineering Manager",
+    "lifestyle": "Early tech adopter, EV enthusiast, weekend gravel cyclist",
+    "interests": ["Clean Energy", "Autonomous Tech", "Smart Home Automation", "Design Tech"],
+    "painPoints": [
+      "Range anxiety in early-generation electric vehicles",
+      "Slow charging infrastructure on long road trips",
+      "Boring interior design in traditional automaker vehicles"
+    ]
+  },
+  {
+    "id": "per-3",
+    "name": "Marathon Runner Maya",
+    "age": "22 - 38",
+    "gender": "Female / All",
+    "income": "$75,000 - $130,000 / year",
+    "location": "Metropolitan & Coastal Cities",
+    "occupation": "Product Designer / Physical Therapist / Marketing Specialist",
+    "lifestyle": "High performance training, 50-mile weekly running regimen, bio-nutrition enthusiast",
+    "interests": ["Endurance Sports", "HRV Tracking", "Cold Plunge Recovery", "Plant-based Nutrition"],
+    "painPoints": [
+      "Smartwatches with weak batteries that die during long runs",
+      "Inaccurate heart rate spikes during high-intensity intervals",
+      "Generic fitness advice that doesn't adapt to daily strain"
+    ]
+  }
+]

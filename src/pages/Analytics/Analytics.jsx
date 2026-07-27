@@ -21,122 +21,143 @@ import {
   Tooltip,
 } from 'recharts';
 
+const ROSE = ['#A96A80', '#D89AAA', '#EBC8D0', '#945A70', '#7D6670'];
+
+const tooltipStyle = {
+  backgroundColor: '#FFFFFF',
+  borderColor: '#EDD5DB',
+  borderRadius: '12px',
+  color: '#4A2E38',
+  boxShadow: '0 4px 16px rgba(169,106,128,0.12)',
+  fontSize: '12px',
+};
+
 export const Analytics = () => {
   return (
     <div className="space-y-8 pb-12">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
-          Analytics & <span className="text-gradient">Telemetry</span>
+        <h1
+          className="font-extrabold text-[#4A2E38] tracking-tight font-serif"
+          style={{ fontSize: 'clamp(1.6rem,4vw,2.25rem)' }}
+        >
+          Analytics &amp; <span className="text-gradient-rose">Telemetry</span>
         </h1>
-        <p className="text-slate-400 text-sm mt-1">
-          Comprehensive multi-channel marketing performance telemetry & AI forecast models.
+        <p className="text-[#7D6670] text-sm mt-1 leading-relaxed">
+          Comprehensive multi-channel marketing performance telemetry &amp; AI forecast models.
         </p>
       </div>
 
       {/* KPI Cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <StatCard title="Average Campaign Score" value="94 / 100" change="+3.4%" trend="up" icon={FiAward} color="#8F7BFF" />
-        <StatCard title="Overall ROI Multiplier" value="4.8x" change="+0.6x" trend="up" icon={FiDollarSign} color="#F3D382" />
-        <StatCard title="Combined Reach" value="4.8M" change="+22.1%" trend="up" icon={FiUsers} color="#67E8F9" />
-        <StatCard title="Conversion Efficiency" value="12.4%" change="+1.8%" trend="up" icon={FiTrendingUp} color="#6EE7B7" />
+        <StatCard title="Average Campaign Score" value="94 / 100" change="+3.4%" trend="up" icon={FiAward} />
+        <StatCard title="Overall ROI Multiplier" value="4.8x" change="+0.6x" trend="up" icon={FiDollarSign} />
+        <StatCard title="Combined Reach" value="4.8M" change="+22.1%" trend="up" icon={FiUsers} />
+        <StatCard title="Conversion Efficiency" value="12.4%" change="+1.8%" trend="up" icon={FiTrendingUp} />
       </div>
 
-      {/* 4 Charts Grid (Pie, Bar, Radar, Area) */}
+      {/* 4 Charts Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Line / Area Chart */}
-        <GlassCard>
-          <h3 className="font-bold text-white text-base mb-4 flex items-center gap-2">
-            <FiTrendingUp className="text-accent-mint" /> Weekly Conversion Growth
+        {/* Area Chart */}
+        <GlassCard className="bg-[#FFFFFF] border-[#EDD5DB]">
+          <h3 className="font-bold text-[#4A2E38] text-base mb-5 flex items-center gap-2 font-serif">
+            <FiTrendingUp className="text-[#A96A80] flex-shrink-0" /> Weekly Conversion Growth
           </h3>
           <div className="h-60">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={analyticsData.timelinePerformance}>
-                <XAxis dataKey="day" stroke="#94A3B8" fontSize={11} />
-                <YAxis stroke="#64748B" fontSize={11} />
-                <Tooltip contentStyle={{ backgroundColor: '#16161E', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '12px' }} />
-                <Area type="monotone" dataKey="conversions" stroke="#6EE7B7" fill="#6EE7B7" fillOpacity={0.2} strokeWidth={3} />
+                <defs>
+                  <linearGradient id="areaRose" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#A96A80" stopOpacity={0.5} />
+                    <stop offset="95%" stopColor="#A96A80" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <XAxis dataKey="day" stroke="#7D6670" fontSize={11} tickLine={false} />
+                <YAxis stroke="#7D6670" fontSize={11} tickLine={false} axisLine={false} />
+                <Tooltip contentStyle={tooltipStyle} />
+                <Area type="monotone" dataKey="conversions" stroke="#A96A80" fill="url(#areaRose)" strokeWidth={3} />
               </AreaChart>
             </ResponsiveContainer>
           </div>
         </GlassCard>
 
-        {/* Budget Pie Chart */}
-        <GlassCard>
-          <h3 className="font-bold text-white text-base mb-4 flex items-center gap-2">
-            <FiPieChart className="text-accent-lavender" /> Channel Spend Share
+        {/* Pie Chart */}
+        <GlassCard className="bg-[#FFFFFF] border-[#EDD5DB]">
+          <h3 className="font-bold text-[#4A2E38] text-base mb-5 flex items-center gap-2 font-serif">
+            <FiPieChart className="text-[#A96A80] flex-shrink-0" /> Channel Spend Share
           </h3>
           <div className="h-60">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
-                <Pie data={analyticsData.budgetAllocation} innerRadius={50} outerRadius={80} dataKey="value">
+                <Pie data={analyticsData.budgetAllocation} innerRadius={50} outerRadius={80} dataKey="value" paddingAngle={4}>
                   {analyticsData.budgetAllocation.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={entry.color} />
+                    <Cell key={`pie-cell-${index}`} fill={ROSE[index % ROSE.length]} />
                   ))}
                 </Pie>
-                <Tooltip contentStyle={{ backgroundColor: '#16161E', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '12px' }} />
+                <Tooltip contentStyle={tooltipStyle} />
               </PieChart>
             </ResponsiveContainer>
           </div>
         </GlassCard>
 
-        {/* Funnel Bar Chart */}
-        <GlassCard>
-          <h3 className="font-bold text-white text-base mb-4 flex items-center gap-2">
-            <FiBarChart2 className="text-accent-aqua" /> Marketing Funnel Stages
+        {/* Funnel Bar */}
+        <GlassCard className="bg-[#FFFFFF] border-[#EDD5DB]">
+          <h3 className="font-bold text-[#4A2E38] text-base mb-5 flex items-center gap-2 font-serif">
+            <FiBarChart2 className="text-[#A96A80] flex-shrink-0" /> Marketing Funnel Stages
           </h3>
           <div className="h-60">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={analyticsData.marketingFunnel} layout="vertical">
-                <XAxis type="number" stroke="#64748B" fontSize={10} />
-                <YAxis dataKey="stage" type="category" stroke="#94A3B8" fontSize={10} width={120} />
-                <Tooltip contentStyle={{ backgroundColor: '#16161E', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '12px' }} />
-                <Bar dataKey="count" fill="#8F7BFF" radius={[0, 6, 6, 0]} />
+              <BarChart data={analyticsData.marketingFunnel} layout="vertical" margin={{ left: 8 }}>
+                <XAxis type="number" stroke="#7D6670" fontSize={10} tickLine={false} />
+                <YAxis dataKey="stage" type="category" stroke="#4A2E38" fontSize={10} width={120} tickLine={false} axisLine={false} />
+                <Tooltip contentStyle={tooltipStyle} />
+                <Bar dataKey="count" fill="#A96A80" radius={[0, 8, 8, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
         </GlassCard>
 
-        {/* Radar Attributes */}
-        <GlassCard>
-          <h3 className="font-bold text-white text-base mb-4 flex items-center gap-2">
-            <FiAward className="text-accent-gold" /> Performance vs Benchmark Radar
+        {/* Radar */}
+        <GlassCard className="bg-[#FFFFFF] border-[#EDD5DB]">
+          <h3 className="font-bold text-[#4A2E38] text-base mb-5 flex items-center gap-2 font-serif">
+            <FiAward className="text-[#A96A80] flex-shrink-0" /> Performance vs Benchmark Radar
           </h3>
           <div className="h-60">
             <ResponsiveContainer width="100%" height="100%">
               <RadarChart data={analyticsData.campaignTrendRadar}>
-                <PolarGrid stroke="rgba(255,255,255,0.1)" />
-                <PolarAngleAxis dataKey="attribute" stroke="#94A3B8" fontSize={10} />
-                <Radar name="AuraGlow" dataKey="AuraGlow" stroke="#8F7BFF" fill="#8F7BFF" fillOpacity={0.5} />
-                <Radar name="Industry" dataKey="IndustryAvg" stroke="#F3D382" fill="#F3D382" fillOpacity={0.2} />
+                <PolarGrid stroke="#EDD5DB" />
+                <PolarAngleAxis dataKey="attribute" stroke="#7D6670" fontSize={10} />
+                <Radar name="AuraGlow" dataKey="AuraGlow" stroke="#A96A80" fill="#A96A80" fillOpacity={0.5} />
+                <Radar name="Industry" dataKey="IndustryAvg" stroke="#D89AAA" fill="#D89AAA" fillOpacity={0.2} />
+                <Tooltip contentStyle={tooltipStyle} />
               </RadarChart>
             </ResponsiveContainer>
           </div>
         </GlassCard>
       </div>
 
-      {/* Detailed Channel Performance Table */}
-      <GlassCard>
-        <h3 className="font-bold text-white text-lg mb-4">Channel Attribution Breakdown</h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm border-collapse">
+      {/* Channel Attribution Table */}
+      <GlassCard className="bg-[#FFFFFF] border-[#EDD5DB]">
+        <h3 className="font-bold text-[#4A2E38] text-lg mb-5 font-serif">Channel Attribution Breakdown</h3>
+        <div className="overflow-x-auto rounded-xl">
+          <table className="w-full text-left text-sm border-collapse min-w-[520px]">
             <thead>
-              <tr className="border-b border-white/10 text-slate-400 text-xs uppercase">
-                <th className="py-3 px-4">Channel</th>
-                <th className="py-3 px-4">Total Clicks</th>
-                <th className="py-3 px-4">CTR</th>
-                <th className="py-3 px-4">Avg CPC</th>
-                <th className="py-3 px-4">Conversions</th>
+              <tr className="bg-[#F8E8EB] text-[#7D6670] text-xs uppercase tracking-wider">
+                <th className="py-3.5 px-5 font-bold rounded-l-xl">Channel</th>
+                <th className="py-3.5 px-5 font-bold">Total Clicks</th>
+                <th className="py-3.5 px-5 font-bold">CTR</th>
+                <th className="py-3.5 px-5 font-bold">Avg CPC</th>
+                <th className="py-3.5 px-5 font-bold rounded-r-xl">Conversions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-white/5 text-xs">
+            <tbody className="divide-y divide-[#EDD5DB]">
               {analyticsData.channelBreakdown.map((ch, idx) => (
-                <tr key={idx} className="hover:bg-white/5 transition-colors">
-                  <td className="py-3 px-4 font-bold text-white">{ch.channel}</td>
-                  <td className="py-3 px-4 text-slate-300 font-mono">{ch.clicks.toLocaleString()}</td>
-                  <td className="py-3 px-4 text-accent-mint font-bold">{ch.ctr}</td>
-                  <td className="py-3 px-4 text-slate-300">{ch.cpc}</td>
-                  <td className="py-3 px-4 text-accent-lavender font-bold">{ch.conversions.toLocaleString()}</td>
+                <tr key={`ch-${idx}`} className="hover:bg-[#FFF8F8] transition-colors">
+                  <td className="py-4 px-5 font-bold text-[#4A2E38]">{ch.channel}</td>
+                  <td className="py-4 px-5 text-[#7D6670] font-mono">{ch.clicks.toLocaleString()}</td>
+                  <td className="py-4 px-5 font-bold text-[#A96A80]">{ch.ctr}</td>
+                  <td className="py-4 px-5 text-[#7D6670]">{ch.cpc}</td>
+                  <td className="py-4 px-5 font-bold text-[#4A2E38]">{ch.conversions.toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>

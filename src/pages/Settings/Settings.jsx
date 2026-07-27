@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GlassCard } from '../../components/Cards/GlassCard';
 import { PrimaryButton } from '../../components/Buttons/PrimaryButton';
-import { FiSettings, FiSliders, FiBell, FiCpu, FiGlobe, FiEye, FiCheck } from 'react-icons/fi';
+import { FiSettings, FiBell, FiCpu, FiGlobe, FiEye, FiCheck, FiShield } from 'react-icons/fi';
 
 export const Settings = () => {
   const [activeTab, setActiveTab] = useState('AI Provider');
@@ -14,28 +14,43 @@ export const Settings = () => {
     setTimeout(() => setSaved(false), 2000);
   };
 
+  const inputCls = `w-full px-4 py-2.5 bg-[#FFF8F8] border border-[#EDD5DB] rounded-xl
+    text-[#4A2E38] text-sm focus:border-[#A96A80] focus:outline-none focus:ring-1 focus:ring-[#A96A80]/30 transition-all`;
+
+  const labelCls = 'block text-xs font-semibold text-[#7D6670] mb-1.5 uppercase tracking-wider';
+
+  const toggleRow = (label) => (
+    <div className="flex items-center justify-between p-4 rounded-xl bg-[#F8E8EB] border border-[#EDD5DB]">
+      <span className="text-sm font-medium text-[#4A2E38]">{label}</span>
+      <input type="checkbox" defaultChecked className="w-4 h-4 accent-[#A96A80] cursor-pointer" />
+    </div>
+  );
+
   return (
     <div className="space-y-8 pb-12">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
-          Application <span className="text-gradient">Settings</span>
+        <h1
+          className="font-extrabold text-[#4A2E38] tracking-tight font-serif"
+          style={{ fontSize: 'clamp(1.6rem,4vw,2.25rem)' }}
+        >
+          Application <span className="text-gradient-rose">Settings</span>
         </h1>
-        <p className="text-slate-400 text-sm mt-1">
+        <p className="text-[#7D6670] text-sm mt-1 leading-relaxed">
           Configure multi-agent LLM providers, notification triggers, and enterprise security policies.
         </p>
       </div>
 
       {/* Tabs Bar */}
-      <div className="glass-panel p-2 flex gap-2 overflow-x-auto">
+      <div className="bg-[#FFFFFF] border border-[#EDD5DB] rounded-2xl p-2 flex gap-2 overflow-x-auto shadow-soft-sm">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-4 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition-all ${
+            className={`px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
               activeTab === tab
-                ? 'bg-brand-gradient text-slate-950 shadow-glow-purple font-bold'
-                : 'text-slate-400 hover:text-white hover:bg-white/5'
+                ? 'bg-[#A96A80] text-white shadow-soft-sm'
+                : 'text-[#7D6670] hover:text-[#4A2E38] hover:bg-[#F8E8EB]'
             }`}
           >
             {tab}
@@ -43,75 +58,67 @@ export const Settings = () => {
         ))}
       </div>
 
-      {/* Settings Content Card */}
-      <GlassCard className="p-6 md:p-8 space-y-6">
+      {/* Settings Content */}
+      <GlassCard className="bg-[#FFFFFF] border-[#EDD5DB] p-6 md:p-8 space-y-6">
+
+        {/* AI Provider */}
         {activeTab === 'AI Provider' && (
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-white flex items-center gap-2 border-b border-white/10 pb-3">
-              <FiCpu className="text-accent-lavender" /> Neural Agent Engine Configuration
+            <h3 className="text-xl font-bold text-[#4A2E38] flex items-center gap-2 border-b border-[#EDD5DB] pb-4 font-serif">
+              <FiCpu className="text-[#A96A80]" /> Neural Agent Engine Configuration
             </h3>
-
-            <div className="space-y-4">
+            <div className="space-y-5">
               <div>
-                <label className="block text-xs font-semibold text-slate-300 mb-1">Primary LLM Provider</label>
-                <select className="w-full px-4 py-2.5 bg-[#16161E] border border-white/10 rounded-xl text-white text-sm focus:border-[#8F7BFF]">
+                <label className={labelCls}>Primary LLM Provider</label>
+                <select className={inputCls}>
                   <option>CampaignMind Autonomous Neural Mesh (Recommended)</option>
                   <option>OpenAI GPT-4o / GPT-4 Turbo</option>
                   <option>Anthropic Claude 3.5 Sonnet</option>
                   <option>Google Gemini 1.5 Pro Enterprise</option>
                 </select>
               </div>
-
               <div>
-                <label className="block text-xs font-semibold text-slate-300 mb-1">Vector DB Retrieval Index</label>
-                <select className="w-full px-4 py-2.5 bg-[#16161E] border border-white/10 rounded-xl text-white text-sm focus:border-[#8F7BFF]">
+                <label className={labelCls}>Vector DB Retrieval Index</label>
+                <select className={inputCls}>
                   <option>FAISS Enterprise Vector Store (Local Encrypted)</option>
                   <option>Pinecone Serverless Index</option>
                   <option>Qdrant Cloud</option>
                 </select>
               </div>
-
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between text-xs">
+              <div className="p-4 rounded-xl bg-[#F8E8EB] border border-[#EDD5DB] flex items-center justify-between gap-4">
                 <div>
-                  <div className="font-bold text-white">Agent Multi-Reasoning Pass</div>
-                  <div className="text-slate-400">Run double evaluator agent verification for campaign scores</div>
+                  <div className="font-bold text-[#4A2E38] text-sm">Agent Multi-Reasoning Pass</div>
+                  <div className="text-xs text-[#7D6670] mt-0.5">Run double evaluator agent verification for campaign scores</div>
                 </div>
-                <input type="checkbox" defaultChecked className="w-4 h-4 accent-[#8F7BFF]" />
+                <input type="checkbox" defaultChecked className="w-4 h-4 accent-[#A96A80] cursor-pointer flex-shrink-0" />
               </div>
             </div>
           </div>
         )}
 
+        {/* Notifications */}
         {activeTab === 'Notifications' && (
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white border-b border-white/10 pb-3 flex items-center gap-2">
-              <FiBell className="text-accent-gold" /> Alert & Telemetry Signals
+          <div className="space-y-5">
+            <h3 className="text-xl font-bold text-[#4A2E38] border-b border-[#EDD5DB] pb-4 flex items-center gap-2 font-serif">
+              <FiBell className="text-[#A96A80]" /> Alert &amp; Telemetry Signals
             </h3>
-            <div className="space-y-3 text-xs">
-              <div className="flex items-center justify-between p-3 rounded-xl bg-white/5">
-                <span className="text-white font-medium">Viral Keyword Spike Alerts</span>
-                <input type="checkbox" defaultChecked className="w-4 h-4 accent-[#8F7BFF]" />
-              </div>
-              <div className="flex items-center justify-between p-3 rounded-xl bg-white/5">
-                <span className="text-white font-medium">Weekly AI Performance Summaries</span>
-                <input type="checkbox" defaultChecked className="w-4 h-4 accent-[#8F7BFF]" />
-              </div>
-              <div className="flex items-center justify-between p-3 rounded-xl bg-white/5">
-                <span className="text-white font-medium">Festival Opportunity Window Triggers</span>
-                <input type="checkbox" defaultChecked className="w-4 h-4 accent-[#8F7BFF]" />
-              </div>
+            <div className="space-y-3">
+              {toggleRow('Viral Keyword Spike Alerts')}
+              {toggleRow('Weekly AI Performance Summaries')}
+              {toggleRow('Festival Opportunity Window Triggers')}
             </div>
           </div>
         )}
 
+        {/* Language & Region */}
         {activeTab === 'Language & Region' && (
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white border-b border-white/10 pb-3 flex items-center gap-2">
-              <FiGlobe className="text-accent-aqua" /> Regional Localization
+          <div className="space-y-5">
+            <h3 className="text-xl font-bold text-[#4A2E38] border-b border-[#EDD5DB] pb-4 flex items-center gap-2 font-serif">
+              <FiGlobe className="text-[#A96A80]" /> Regional Localization
             </h3>
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1">System Language</label>
-              <select className="w-full px-4 py-2.5 bg-[#16161E] border border-white/10 rounded-xl text-white text-sm">
+              <label className={labelCls}>System Language</label>
+              <select className={inputCls}>
                 <option>English (United States)</option>
                 <option>Spanish (Global)</option>
                 <option>French (European)</option>
@@ -121,35 +128,43 @@ export const Settings = () => {
           </div>
         )}
 
+        {/* Appearance */}
         {activeTab === 'Appearance' && (
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white border-b border-white/10 pb-3 flex items-center gap-2">
-              <FiEye className="text-accent-mint" /> Interface Theme
+          <div className="space-y-5">
+            <h3 className="text-xl font-bold text-[#4A2E38] border-b border-[#EDD5DB] pb-4 flex items-center gap-2 font-serif">
+              <FiEye className="text-[#A96A80]" /> Interface Theme
             </h3>
-            <div className="grid grid-cols-2 gap-4 text-xs">
-              <div className="p-4 rounded-2xl bg-[#0B0B0E] border-2 border-[#8F7BFF] text-center font-bold text-white cursor-pointer">
-                Futuristic Dark Glassmorphism (Active)
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#FFF8F8] to-[#F3D8DE] border-2 border-[#A96A80] text-center font-bold text-[#4A2E38] cursor-pointer shadow-soft-sm">
+                ✨ Soft Luxury Blush (Active)
               </div>
-              <div className="p-4 rounded-2xl bg-slate-900 border border-white/10 text-center font-medium text-slate-400 cursor-pointer">
+              <div className="p-5 rounded-2xl bg-[#F8E8EB] border border-[#EDD5DB] text-center font-medium text-[#7D6670] cursor-pointer hover:border-[#A96A80] transition-colors">
                 High Contrast Monochrome
               </div>
             </div>
           </div>
         )}
 
+        {/* Workspace Governance */}
         {activeTab === 'Workspace Governance' && (
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white border-b border-white/10 pb-3">
-              Enterprise Workspace Policy
+          <div className="space-y-5">
+            <h3 className="text-xl font-bold text-[#4A2E38] border-b border-[#EDD5DB] pb-4 flex items-center gap-2 font-serif">
+              <FiShield className="text-[#A96A80]" /> Enterprise Workspace Policy
             </h3>
-            <p className="text-xs text-slate-300">
-              Single-tenant workspace active. All model weights and brand assets strictly isolated.
-            </p>
+            <div className="p-5 rounded-2xl bg-[#F8E8EB] border border-[#EDD5DB] space-y-2">
+              <div className="flex items-center gap-2 text-sm font-bold text-[#4A2E38]">
+                <FiCheck className="text-[#A96A80] w-4 h-4" />
+                Single-tenant workspace active
+              </div>
+              <p className="text-sm text-[#7D6670] leading-relaxed">
+                All model weights and brand assets are strictly isolated. No data is shared with public LLMs.
+              </p>
+            </div>
           </div>
         )}
 
-        {/* Save Button */}
-        <div className="pt-4 border-t border-white/10 flex justify-end">
+        {/* Save */}
+        <div className="pt-5 border-t border-[#EDD5DB] flex justify-end">
           <PrimaryButton icon={saved ? FiCheck : undefined} onClick={handleSave}>
             {saved ? 'Settings Saved!' : 'Save Preferences'}
           </PrimaryButton>

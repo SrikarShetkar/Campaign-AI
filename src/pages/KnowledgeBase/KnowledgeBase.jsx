@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import knowledgeData from '../../mock/knowledge.json';
 import { GlassCard } from '../../components/Cards/GlassCard';
-import { FiSearch, FiDatabase, FiTag, FiBookOpen, FiArrowRight } from 'react-icons/fi';
+import { FiSearch, FiDatabase, FiArrowRight } from 'react-icons/fi';
 
 export const KnowledgeBase = () => {
   const [search, setSearch] = useState('');
@@ -20,38 +20,43 @@ export const KnowledgeBase = () => {
 
   return (
     <div className="space-y-8 pb-12">
-      {/* Header & Search Bar */}
-      <div className="space-y-4">
+      {/* Header & Search */}
+      <div className="space-y-5">
         <div>
-          <h1 className="text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
-            Knowledge <span className="text-gradient">Base</span>
+          <h1
+            className="font-extrabold text-[#4A2E38] tracking-tight font-serif"
+            style={{ fontSize: 'clamp(1.6rem,4vw,2.25rem)' }}
+          >
+            Knowledge <span className="text-gradient-rose">Base</span>
           </h1>
-          <p className="text-slate-400 text-sm mt-1">
+          <p className="text-[#7D6670] text-sm mt-1 leading-relaxed">
             Enterprise repository storing consumer datasets, brand playbooks, competitor positioning, and festival logs.
           </p>
         </div>
 
+        {/* Search Bar */}
         <div className="relative max-w-2xl">
-          <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5" />
+          <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-[#A08A92] w-5 h-5" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search marketing frameworks, tags, or report titles..."
-            className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/15 rounded-full text-white text-sm focus:outline-none focus:border-[#8F7BFF] focus:ring-1 focus:ring-[#8F7BFF]"
+            className="w-full pl-12 pr-4 py-3 bg-[#FFFFFF] border border-[#EDD5DB] rounded-full text-[#4A2E38] text-sm
+              placeholder-[#A08A92] focus:outline-none focus:border-[#A96A80] focus:ring-1 focus:ring-[#A96A80]/30 transition-all shadow-soft-sm"
           />
         </div>
 
         {/* Category Pills */}
-        <div className="flex flex-wrap gap-2 pt-2">
+        <div className="flex flex-wrap gap-2">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${
+              className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all border ${
                 selectedCategory === cat
-                  ? 'bg-brand-gradient text-slate-950 shadow-glow-purple'
-                  : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'
+                  ? 'bg-[#A96A80] text-white border-[#A96A80] shadow-soft-sm'
+                  : 'bg-[#FFFFFF] text-[#7D6670] border-[#EDD5DB] hover:border-[#A96A80] hover:text-[#4A2E38]'
               }`}
             >
               {cat}
@@ -61,37 +66,57 @@ export const KnowledgeBase = () => {
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredItems.map((item) => (
-          <GlassCard key={item.id} className="flex flex-col justify-between space-y-4 group">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="px-2.5 py-0.5 rounded-full bg-accent-lavender/10 text-accent-lavender text-[10px] font-bold border border-accent-lavender/20">
-                  {item.category}
-                </span>
-                <span className="text-[10px] font-mono text-slate-500">{item.id.toUpperCase()}</span>
-              </div>
-              <h3 className="font-bold text-white text-lg group-hover:text-accent-lavender transition-colors">
-                {item.title}
-              </h3>
-              <p className="text-xs text-slate-400 leading-relaxed">{item.summary}</p>
-            </div>
-
-            <div className="pt-4 border-t border-white/10 space-y-3">
-              <div className="flex flex-wrap gap-1.5">
-                {item.tags.map((tag, idx) => (
-                  <span key={idx} className="px-2 py-0.5 text-[10px] rounded-md bg-white/5 text-slate-300 font-mono">
-                    #{tag}
+      {filteredItems.length === 0 ? (
+        <div className="text-center py-16 text-[#A08A92]">
+          <FiDatabase className="w-10 h-10 mx-auto mb-3 opacity-40" />
+          <p className="text-sm font-medium">No documents match your search.</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredItems.map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col justify-between bg-[#FFFFFF] border border-[#EDD5DB] rounded-2xl p-6
+                shadow-soft hover:-translate-y-1 hover:border-[#A96A80] hover:shadow-soft-lg transition-all duration-300 group"
+            >
+              <div className="space-y-3 flex-1">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="px-2.5 py-1 rounded-full bg-[#F3D8DE] text-[#4A2E38] text-[10px] font-bold border border-[#EDD5DB] truncate max-w-[70%]">
+                    {item.category}
                   </span>
-                ))}
+                  <span className="text-[10px] font-mono text-[#A08A92] flex-shrink-0">{item.id.toUpperCase()}</span>
+                </div>
+
+                <h3
+                  className="font-bold text-[#4A2E38] font-serif leading-snug break-words group-hover:text-[#A96A80] transition-colors"
+                  style={{ fontSize: 'clamp(1rem,2vw,1.1rem)' }}
+                >
+                  {item.title}
+                </h3>
+
+                <p className="text-xs text-[#7D6670] leading-relaxed">{item.summary}</p>
               </div>
-              <div className="flex items-center justify-end text-xs font-semibold text-accent-lavender hover:underline cursor-pointer">
-                <span>View Full Vector Document</span> <FiArrowRight className="ml-1 w-3.5 h-3.5" />
+
+              <div className="pt-4 mt-4 border-t border-[#EDD5DB] space-y-3">
+                <div className="flex flex-wrap gap-1.5">
+                  {item.tags.map((tag, idx) => (
+                    <span
+                      key={`tag-${idx}`}
+                      className="px-2 py-0.5 text-[10px] rounded-md bg-[#F8E8EB] text-[#7D6670] font-mono border border-[#EDD5DB]"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex items-center justify-end gap-1 text-xs font-semibold text-[#A96A80] hover:underline cursor-pointer">
+                  <span>View Full Vector Document</span>
+                  <FiArrowRight className="w-3.5 h-3.5" />
+                </div>
               </div>
             </div>
-          </GlassCard>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

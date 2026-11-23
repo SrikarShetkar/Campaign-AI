@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Secrets and generated backend artifacts
+.env
+.env.*
+!.env.example
+backend/uploads/
+backend/app/rag/faiss_cache.pkl
+backend/app/rag/kb_hash.txt
+__pycache__/
+.pytest_cache/

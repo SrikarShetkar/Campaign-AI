@@ -56,11 +56,8 @@ class LLMEngine:
         duration = payload.get("campaign_duration", "30 Days")
 
         # Calculate metrics from budget & benchmarks
-        reach_est = None
+        # Retrieval similarity is not a model confidence or campaign quality score.
         avg_confidence = None
-        if retrieved_sources:
-            scores = [s.get("similarity_score", 0.85) for s in retrieved_sources]
-            avg_confidence = round(sum(scores) / len(scores), 2)
 
         return {
             "campaign_title": f"{brand} x {festival}: The {product} {goal} Protocol",

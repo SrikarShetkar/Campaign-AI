@@ -5,7 +5,6 @@ Supports OpenAI GPT-4o when key is provided, or intelligent fallback synthesis.
 """
 import json
 import os
-import random
 from typing import Dict, Any, List
 from app.config.settings import settings
 
@@ -57,8 +56,8 @@ class LLMEngine:
         duration = payload.get("campaign_duration", "30 Days")
 
         # Calculate metrics from budget & benchmarks
-        reach_est = int(budget * random.uniform(8.5, 14.2))
-        avg_confidence = round(random.uniform(0.91, 0.98), 2)
+        reach_est = None
+        avg_confidence = None
         if retrieved_sources:
             scores = [s.get("similarity_score", 0.85) for s in retrieved_sources]
             avg_confidence = round(sum(scores) / len(scores), 2)
@@ -68,8 +67,8 @@ class LLMEngine:
             "campaign_strategy": f"Deploy a high-conversion, multi-touchpoint strategy for {brand} across {region} during {season}. Capitalizing on {festival} consumer buying intent, this campaign positions {product} as the premier choice in {cat}.",
             "customer_insights": [
                 f"Consumers in {region} seeking {cat} prioritize clean ingredient transparency and clinical efficacy.",
-                f"Peak purchase intent increases by {random.randint(180, 320)}% during {festival}.",
-                f"Short-form video formats (TikTok/Reels) drive 64% of first-time discovery for {audience}."
+                f"Validate seasonal purchase intent for {festival} using actual market research.",
+                f"Test short-form video as a discovery channel for {audience}."
             ],
             "marketing_angle": f"The Science of Pure Performance: Elevating daily {cat} routines without synthetic compromise.",
             "target_persona": {
@@ -79,7 +78,7 @@ class LLMEngine:
                 "buying_triggers": ["Verified customer reviews", "Micro-influencer video proof", "Limited-time festival discounts"]
             },
             "suggested_platforms": channels,
-            "estimated_reach": f"{reach_est:,} Impression Reach",
+            "estimated_reach": "Not forecast",
             "budget_allocation": [
                 {"channel": channels[0] if len(channels)>0 else "Meta", "percentage": "40%", "amount": f"${int(budget * 0.4):,}"},
                 {"channel": channels[1] if len(channels)>1 else "TikTok", "percentage": "35%", "amount": f"${int(budget * 0.35):,}"},
@@ -113,10 +112,10 @@ class LLMEngine:
             },
             "hashtags": [f"#{brand}", f"#{cat.replace(' ','')}", f"#{season}Glow", f"#{festival}Deals", "#CleanCPG", "#IngredientTransparency"],
             "kpis": {
-                "target_roi": f"{round(random.uniform(3.5, 5.8), 2)}x ROAS",
-                "expected_ctr": f"{round(random.uniform(3.2, 5.6), 1)}%",
-                "conversion_rate": f"{round(random.uniform(4.1, 7.5), 1)}%",
-                "estimated_cpa": f"${round(budget / (reach_est * 0.003), 2)}"
+                "target_roi": "Not forecast",
+                "expected_ctr": "Not forecast",
+                "conversion_rate": "Not forecast",
+                "estimated_cpa": "Not forecast"
             },
             "ai_confidence_score": avg_confidence,
             "retrieved_sources": [

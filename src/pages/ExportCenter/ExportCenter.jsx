@@ -14,7 +14,7 @@ export const ExportCenter = () => {
     {
       id: 'pdf',
       name: 'Enterprise Executive PDF',
-      desc: 'Complete 12-page PDF deck with visual prompts, ROI analysis, and multi-channel copy.',
+      desc: 'PDF campaign summary with available fields and copy.',
       icon: FiFileText,
     },
     {
@@ -32,7 +32,7 @@ export const ExportCenter = () => {
     {
       id: 'csv',
       name: 'Metrics Attribution CSV',
-      desc: 'Granular channel budget, CPC, CTR, reach, and conversion KPI table.',
+      desc: 'CSV summary of available campaign fields.',
       icon: FiDatabase,
     },
   ];
@@ -44,8 +44,8 @@ export const ExportCenter = () => {
       const campaign = activeCampaign || { name: 'CampaignMind Export', tagline: 'AI Generated' };
       await campaignService.exportCampaign(campaign, fmt);
       setSuccessFormat(fmt);
-    } catch {
-      setSuccessFormat(fmt);
+    } catch (error) {
+      console.error('Export failed:', error);
     } finally {
       setDownloadingFormat(null);
       setTimeout(() => setSuccessFormat(null), 3000);

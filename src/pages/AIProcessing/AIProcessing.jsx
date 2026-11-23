@@ -8,7 +8,7 @@ import { useCampaignStore } from '../../store/useCampaignStore';
 import { campaignService } from '../../services/campaignService';
 import {
   FiSearch, FiTrendingUp, FiFeather, FiEdit3,
-  FiDollarSign, FiCpu, FiArrowRight, FiAlertCircle,
+  FiDollarSign, FiCpu, FiAlertCircle,
 } from 'react-icons/fi';
 
 export const AIProcessing = () => {
@@ -123,14 +123,6 @@ export const AIProcessing = () => {
           })}
         </div>
 
-        {/* Manual skip */}
-        {false && !isComplete && (
-          <div className="text-center pt-2">
-            <PrimaryButton icon={FiArrowRight} onClick={() => navigate('/result')}>
-              View Campaign Result Now
-            </PrimaryButton>
-          </div>
-        )}
       </div>
     </div>
   );

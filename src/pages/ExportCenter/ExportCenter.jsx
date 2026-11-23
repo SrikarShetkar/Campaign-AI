@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { GlassCard } from '../../components/Cards/GlassCard';
 import { PrimaryButton } from '../../components/Buttons/PrimaryButton';
 import { useCampaignStore } from '../../store/useCampaignStore';
 import { campaignService } from '../../services/campaignService';

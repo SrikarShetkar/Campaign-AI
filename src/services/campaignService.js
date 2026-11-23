@@ -79,8 +79,9 @@ export const campaignService = {
       const res = await api.post('/campaign', payload);
       const backendData = res.data.data;
       return this._normalizeCampaign(backendData, wizardData);
-    } catch {
-      // Generate realistic custom-synthesized campaign output for offline/client mode
+    } catch (error) {
+      if (import.meta.env.VITE_API_BASE_URL) throw error;
+      // Demo-only local template; never silently mask a configured API failure
       const customCampaign = {
         id: `cmp-${Date.now()}`,
         status: 'Draft',

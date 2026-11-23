@@ -30,15 +30,8 @@ export const Sidebar = () => {
     { name: 'Campaign Generator', path: '/generator', icon: FiPlusCircle, badge: 'AI' },
     { name: 'Competitor Analyzer', path: '/competitor-analyzer', icon: FiShield },
     { name: 'Sales Optimizer', path: '/sales-optimizer', icon: FiDollarSign },
-    { name: 'Trend Intelligence', path: '/trends', icon: FiTrendingUp },
-    { name: 'Campaign Comparison', path: '/comparison', icon: FiColumns },
     { name: 'Campaign History', path: '/history', icon: FiClock },
-    { name: 'Brand Guidelines', path: '/brand', icon: FiBookOpen },
-    { name: 'Knowledge Base', path: '/knowledge', icon: FiDatabase },
-    { name: 'Analytics', path: '/analytics', icon: FiBarChart2 },
     { name: 'Export Center', path: '/export', icon: FiDownload },
-    { name: 'Settings', path: '/settings', icon: FiSettings },
-    { name: 'Profile', path: '/profile', icon: FiUser },
   ];
 
   return (
@@ -62,7 +55,7 @@ export const Sidebar = () => {
                   Campaign<span className="text-[#A96A80]">Mind</span>
                 </span>
                 <span className="text-[10px] uppercase font-bold text-[#A96A80] tracking-widest block">
-                  Enterprise OS
+                  Campaign Studio
                 </span>
               </div>
             )}
@@ -114,7 +107,7 @@ export const Sidebar = () => {
           title={sidebarCollapsed ? 'Logout' : undefined}
         >
           <FiLogOut className="w-5 h-5 text-[#A96A80]" />
-          {!sidebarCollapsed && <span>Logout</span>}
+          {!sidebarCollapsed && <span>Back to home</span>}
         </button>
       </div>
     </aside>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCampaignStore } from '../../store/useCampaignStore';
 import { GlassCard } from '../../components/Cards/GlassCard';
@@ -10,7 +10,6 @@ import {
   FiSliders,
   FiTrendingUp,
   FiCheckCircle,
-  FiUploadCloud,
   FiArrowRight,
   FiArrowLeft,
   FiZap,
@@ -19,7 +18,6 @@ import {
 export const CampaignGenerator = () => {
   const navigate = useNavigate();
   const { wizardStep, setWizardStep, wizardData, updateWizardData } = useCampaignStore();
-  const [uploadedFileName, setUploadedFileName] = useState('');
   const readiness = [
     { label: 'Brand name', ok: Boolean(wizardData.brandName.trim()) },
     { label: 'Product name', ok: Boolean(wizardData.productName.trim()) },
@@ -48,12 +46,6 @@ export const CampaignGenerator = () => {
   const handleBack = () => {
     if (wizardStep > 1) {
       setWizardStep(wizardStep - 1);
-    }
-  };
-
-  const handleFileUpload = (e) => {
-    if (e.target.files && e.target.files[0]) {
-      setUploadedFileName(e.target.files[0].name);
     }
   };
 

@@ -7,6 +7,39 @@ import api from './api';
 import mockCampaigns from '../mock/campaigns.json';
 
 export const campaignService = {
+  async exportCampaign(campaign, format) {
+    const filename = String(campaign.name || 'campaign').replace(/[^a-z0-9_-]+/gi, '_').slice(0, 70);
+    let blob;
+    if (format === 'json') {
+      blob = new Blob([JSON.stringify(campaign, null, 2)], { type: 'application/json' });
+    } else if (format === 'csv') {
+      const rows = Object.entries({
+        Name: campaign.name,
+        Brand: campaign.brand,
+        Status: campaign.status,
+        Budget: campaign.budget,
+        Duration: campaign.duration,
+      });
+      const quote = value => '"' + String(value ?? '').replaceAll('"', '""') + '"';
+      blob = new Blob([['Field', 'Value'].map(quote).join(','), ...rows.map(row => row.map(quote).join(','))].join('\r\n')], { type: 'text/csv' });
+    } else {
+      if (!import.meta.env.VITE_API_BASE_URL) throw new Error('PDF and DOCX require a connected backend');
+      const response = await api.post('/api/v1/export-campaign', { campaign, format }, { responseType: 'blob' });
+      blob = response.data;
+    }
+    const url = URL.createObjectURL(blob);
+    try {
+      const anchor = document.createElement('a');
+      anchor.href = url;
+      anchor.download = filename + '.' + format;
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+    } finally {
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+  },
+
   /**
    * Feature 1 — AI Campaign Generator
    * POST /campaign

@@ -81,7 +81,6 @@ export const campaignService = {
       return this._normalizeCampaign(backendData, wizardData);
     } catch {
       // Generate realistic custom-synthesized campaign output for offline/client mode
-      const estimatedReachVal = `${(budgetNum * 14).toLocaleString()} Impressions`;
       const customCampaign = {
         id: `cmp-${Date.now()}`,
         status: 'Draft',

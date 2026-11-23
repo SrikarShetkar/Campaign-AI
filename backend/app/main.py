@@ -59,13 +59,12 @@ app.include_router(upload_router)
 @app.get("/health", tags=["System"])
 async def health_check():
     from app.rag.vector_store import vector_store
-    from app.rag.llm_engine import llm_engine
     return {
         "status": "operational",
         "project": settings.PROJECT_NAME,
         "version": "2.0.0",
         "knowledge_base_docs": len(vector_store.documents),
-        "llm_mode": "openai" if llm_engine.use_openai else "intelligent_mock",
+        "llm_mode": "gemini_configured" if settings.GEMINI_API_KEY else "gemini_unconfigured",
     }
 
 @app.get("/", tags=["System"])

@@ -24,8 +24,7 @@ export const campaignService = {
       const csv = [
         ['Field', 'Value'].map(quote).join(','),
         ...rows.map(row => row.map(quote).join(',')),
-      ].join('\\r\
-');
+      ].join(String.fromCharCode(13, 10));
       blob = new Blob([csv], { type: 'text/csv' });
     } else {
       if (!import.meta.env.VITE_API_BASE_URL) throw new Error('PDF and DOCX require a connected backend');

@@ -7,7 +7,7 @@ from app.rag.loader import loader
 
 logger = logging.getLogger("campaignmind.vector_store")
 
-INDEX_CACHE_PATH = os.path.join(os.path.dirname(__file__), "faiss_cache.pkl")
+INDEX_CACHE_PATH = os.path.join(os.path.dirname(__file__), "tfidf_index.json")
 HASH_CACHE_PATH = os.path.join(os.path.dirname(__file__), "kb_hash.txt")
 
 class SimpleVectorizer:

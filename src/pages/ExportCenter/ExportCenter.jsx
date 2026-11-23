@@ -9,6 +9,7 @@ export const ExportCenter = () => {
   const { activeCampaign } = useCampaignStore();
   const [downloadingFormat, setDownloadingFormat] = useState(null);
   const [successFormat, setSuccessFormat] = useState(null);
+  const [exportError, setExportError] = useState('');
 
   const formats = [
     {
@@ -40,12 +41,13 @@ export const ExportCenter = () => {
   const handleExport = async (fmt) => {
     setDownloadingFormat(fmt);
     setSuccessFormat(null);
+    setExportError('');
     try {
       const campaign = activeCampaign || { name: 'CampaignMind Export', tagline: 'AI Generated' };
       await campaignService.exportCampaign(campaign, fmt);
       setSuccessFormat(fmt);
     } catch (error) {
-      console.error('Export failed:', error);
+      setExportError(error.message || 'Export failed');
     } finally {
       setDownloadingFormat(null);
       setTimeout(() => setSuccessFormat(null), 3000);
@@ -89,6 +91,7 @@ export const ExportCenter = () => {
         </div>
       )}
 
+      {exportError && <p role="alert" className="text-sm text-red-700">{exportError}</p>}
       {/* Export Format Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {formats.map((fmt) => (
@@ -115,7 +118,7 @@ export const ExportCenter = () => {
               <PrimaryButton
                 icon={successFormat === fmt.id ? FiCheck : FiDownload}
                 onClick={() => handleExport(fmt.id)}
-                disabled={downloadingFormat === fmt.id}
+                disabled={downloadingFormat === fmt.id || (!import.meta.env.VITE_API_BASE_URL && ['pdf', 'docx'].includes(fmt.id))}
                 className="w-full justify-center text-sm"
               >
                 {downloadingFormat === fmt.id
@@ -124,6 +127,7 @@ export const ExportCenter = () => {
                   ? 'Downloaded!'
                   : `Export as ${fmt.id.toUpperCase()}`}
               </PrimaryButton>
+              {!import.meta.env.VITE_API_BASE_URL && ['pdf', 'docx'].includes(fmt.id) && <p className="text-xs text-[#7D6670] mt-2">Requires backend connection</p>}
             </div>
           </div>
         ))}

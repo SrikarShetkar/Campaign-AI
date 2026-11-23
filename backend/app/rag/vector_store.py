@@ -1,7 +1,6 @@
 import os
 import json
 import logging
-import pickle
 import math
 from typing import List, Dict, Any, Tuple
 from app.rag.loader import loader
@@ -97,18 +96,6 @@ class VectorStoreManager:
 
     def load_or_rebuild_index(self, force_rebuild: bool = False):
         needs_rebuild, latest_hash = self.check_needs_rebuild()
-        if not force_rebuild and not needs_rebuild:
-            try:
-                with open(INDEX_CACHE_PATH, "rb") as f:
-                    data = pickle.load(f)
-                    self.documents = data["documents"]
-                    self.vectorizer = data["vectorizer"]
-                    self.current_hash = latest_hash
-                    self.index_ready = True
-                    logger.info(f"Loaded existing FAISS/Vector store with {len(self.documents)} documents.")
-                    return
-            except Exception as e:
-                logger.warning(f"Failed loading cached vector store: {e}. Rebuilding...")
 
         # Rebuild Index
         logger.info("Building vector index for Knowledge Base datasets...")
@@ -123,8 +110,8 @@ class VectorStoreManager:
 
         # Save cache
         try:
-            with open(INDEX_CACHE_PATH, "wb") as f:
-                pickle.dump({"documents": self.documents, "vectorizer": self.vectorizer}, f)
+            with open(INDEX_CACHE_PATH, "w", encoding="utf-8") as f:
+                json.dump({"documents": self.documents, "vocab": self.vectorizer.vocab, "idf": self.vectorizer.idf}, f)
             with open(HASH_CACHE_PATH, "w", encoding="utf-8") as f:
                 f.write(latest_hash)
             self.current_hash = latest_hash

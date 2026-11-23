@@ -1,12 +1,19 @@
 import logging
 from typing import Dict, Any, List
-from fastapi import APIRouter, HTTPException, status, Query
+from fastapi import APIRouter, HTTPException, status, Query, Depends, Header
 from app.schemas.campaign_schemas import (
     CampaignGeneratorInput, CompetitorAnalyzerInput, SalesOptimizerInput
 )
 from app.rag.vector_store import vector_store
 from app.rag.llm_engine import llm_engine
 from app.rag.loader import loader
+
+from app.config.settings import settings
+from fastapi import Request
+
+def require_admin(x_admin_key: str | None = Header(default=None)):
+    if not settings.ADMIN_API_KEY or x_admin_key != settings.ADMIN_API_KEY:
+        raise HTTPException(status_code=403, detail="Admin access required")
 
 logger = logging.getLogger("campaignmind.routes")
 router = APIRouter(tags=["Enterprise AI Marketing OS"])
@@ -149,7 +156,7 @@ async def get_kb_status():
 
 @router.post("/rebuild-index")
 @router.post("/api/v1/rebuild-index")
-async def rebuild_index():
+async def rebuild_index(_: None = Depends(require_admin)):
     """Manually rebuild vector index."""
     try:
         vector_store.load_or_rebuild_index(force_rebuild=True)

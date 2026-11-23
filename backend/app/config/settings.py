@@ -15,8 +15,8 @@ class Settings(BaseSettings):
     KNOWLEDGE_BASE_DIR: str = os.path.join(os.path.dirname(__file__), "..", "knowledge_base")
     PROMPTS_DIR: str = os.path.join(os.path.dirname(__file__), "..", "prompts")
 
-    JWT_SECRET_KEY: str = "campaignmind-super-secret-enterprise-jwt-key-2026"
-    CORS_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173", "*"]
+    JWT_SECRET_KEY: str = ""
+    CORS_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173"]
 
     class Config:
         env_file = ".env"

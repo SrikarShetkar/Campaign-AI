@@ -79,8 +79,9 @@ export const campaignService = {
       const res = await api.post('/campaign', payload);
       const backendData = res.data.data;
       return this._normalizeCampaign(backendData, wizardData);
-    } catch {
-      // Generate realistic custom-synthesized campaign output for offline/client mode
+    } catch (error) {
+      if (import.meta.env.VITE_API_BASE_URL) throw error;
+      // Demo-only local template; never silently mask a configured API failure
       const customCampaign = {
         id: `cmp-${Date.now()}`,
         status: 'Draft',
@@ -118,8 +119,8 @@ export const campaignService = {
           buying_triggers: ['Verified customer reviews', 'Micro-influencer video proof']
         },
         socialPosts: [
-          { platform: 'Instagram', copy: `✨ Elevate your routine with ${productName} by ${brandName}. Formulated with ${usp}. Link in bio! 🌿 #${brandName.replace(/\s+/g,'')} #${category.replace(/[^a-zA-Z]/g,'')}`, engagementEstimate: '48k interactions' },
-          { platform: 'TikTok', copy: `POV: You found the ONLY ${productName} that actually works 🔥 Code ${brandName.toUpperCase()}15 at checkout! #BeautyTok`, engagementEstimate: '135k views' }
+          { platform: 'Instagram', copy: `✨ Elevate your routine with ${productName} by ${brandName}. Formulated with ${usp}. Link in bio! 🌿 #${brandName.replace(/\s+/g,'')} #${category.replace(/[^a-zA-Z]/g,'')}`, engagementEstimate: 'Not measured' },
+          { platform: 'TikTok', copy: `POV: You found the ONLY ${productName} that actually works 🔥 Code ${brandName.toUpperCase()}15 at checkout! #BeautyTok`, engagementEstimate: 'Not measured' }
         ],
         social_media_captions: {
           instagram: `✨ Elevate your routine with ${productName} by ${brandName}. Formulated with ${usp}. Link in bio! 🌿 #${brandName.replace(/\s+/g,'')} #${category.replace(/[^a-zA-Z]/g,'')}`,
@@ -171,18 +172,18 @@ export const campaignService = {
       campaignScore: null,
       trendScore: null,
       virality: null,
-      projectedRoi: data.kpis?.target_roi || '5.2x',
-      roi: data.kpis?.target_roi || '5.2x',
-      targetReach: data.estimated_reach || '1.5M Impressions',
-      estimated_reach: data.estimated_reach || '1.5M Impressions',
+      projectedRoi: data.kpis?.target_roi || 'Not forecast',
+      roi: data.kpis?.target_roi || 'Not forecast',
+      targetReach: data.estimated_reach || 'Not forecast',
+      estimated_reach: data.estimated_reach || 'Not forecast',
       budget_input: wizardData.budget || '$50,000',
       budget: wizardData.budget || '$50,000',
       duration: wizardData.duration || '30 Days',
       persona: data.target_persona || { persona_name: 'Target Buyer Persona', age_range: '25-40' },
       target_persona: data.target_persona || { name: 'Target Buyer Persona', demographics: '25-40' },
       socialPosts: [
-        { platform: 'Instagram', copy: data.social_media_captions?.instagram || `✨ Discover ${productName} by ${brandName}. #CleanBeauty`, engagementEstimate: '45k interactions' },
-        { platform: 'TikTok', copy: data.social_media_captions?.tiktok || `POV: ${productName} is live! 🔥 #BeautyTok`, engagementEstimate: '120k views' }
+        { platform: 'Instagram', copy: data.social_media_captions?.instagram || `✨ Discover ${productName} by ${brandName}. #CleanBeauty`, engagementEstimate: 'Not measured' },
+        { platform: 'TikTok', copy: data.social_media_captions?.tiktok || `POV: ${productName} is live! 🔥 #BeautyTok`, engagementEstimate: 'Not measured' }
       ],
       social_media_captions: data.social_media_captions || {},
       emailSequence: [data.email_campaign || { subject: `Exclusive: ${productName}`, previewText: 'Discover now', body: 'Shop now...' }],

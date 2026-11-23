@@ -42,3 +42,14 @@ Set `VITE_API_BASE_URL=http://localhost:8000` in `.env.local` to use the local A
 - Uploads are currently stored only, not semantically analyzed or used to train models.
 - Do not place API secrets in Vite environment variables.
 - Secure or disable administrative and upload endpoints before exposing the backend publicly.
+
+## Phase 2 — Gemini AI generation
+
+The `/campaign` and `/api/v1/campaign` endpoints now use Gemini structured JSON generation with up to five TF-IDF retrieved knowledge snippets. The generated response is validated against a Pydantic schema; provider failures return HTTP 503 rather than fabricated AI output. Competitor analysis and sales optimization remain template-based and are not yet production AI services.
+
+1. Set `GEMINI_API_KEY` **only in the backend environment** (never use a `VITE_` prefix). Optional: `GEMINI_MODEL=gemini-2.5-flash`.
+2. Run `python -m pytest app/tests/ -v` from `backend/` (offline unit tests mock the provider).
+3. Set frontend `VITE_API_BASE_URL` to the public backend HTTPS origin; leave unset only for the labeled frontend demo.
+4. Verify the selected Gemini model supports JSON response schemas in your account, and run a real integration smoke test with a valid key before deploying.
+
+The retrieval dataset may contain illustrative information; sources are references, **not verified market evidence**. Generation is currently synchronous. Rate limiting, usage quotas, durable persistence, access control, and deployment testing remain required before public API access.

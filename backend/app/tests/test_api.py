@@ -14,7 +14,9 @@ def test_health_check():
     data = resp.json()
     assert data["status"] == "operational"
 
-def test_campaign_generator():
+def test_campaign_generator(monkeypatch):
+    from app.tests.test_gemini_service import sample_campaign
+    monkeypatch.setattr('app.routes.campaign.generate_gemini_campaign', lambda payload, docs: {**sample_campaign(), 'generation_mode': 'gemini_rag', 'retrieved_sources': docs})
     payload = {
         "brand_name": "AuraPure",
         "product": "Bio-Active Hydrating Serum",
@@ -33,7 +35,8 @@ def test_campaign_generator():
     data = resp.json()
     assert data["success"] is True
     assert "campaign_title" in data["data"]
-    assert "ai_confidence_score" in data["data"]
+    assert data["data"]["generation_mode"] == "gemini_rag"
+    assert data["data"]["campaign_title"] == "TestBrand Launch"
     assert len(data["data"]["retrieved_sources"]) > 0
 
 def test_competitor_analysis():
@@ -81,12 +84,32 @@ def test_kb_status():
 
 def test_rebuild_index():
     resp = client.post("/rebuild-index")
-    assert resp.status_code == 200
-    data = resp.json()
-    assert data["success"] is True
+    assert resp.status_code == 403
 
 def test_analytics():
     resp = client.get("/analytics")
     assert resp.status_code == 200
     data = resp.json()
     assert data["success"] is True
+
+
+def test_campaign_input_aliases_reach_generator(monkeypatch):
+    monkeypatch.setattr('app.routes.campaign.generate_gemini_campaign', lambda payload, docs: {'campaign_title': payload['brand_name'] + ' ' + payload['product'], 'metrics_are_estimates': False})
+    response = client.post("/campaign", json={
+        "brandName": "TestBrand", "productName": "TestProduct",
+        "category": "Food", "campaignGoal": "Awareness",
+        "budget": 1200, "festival": "Diwali"
+    })
+    assert response.status_code == 200
+    data = response.json()["data"]
+    assert "TestBrand" in data["campaign_title"]
+    assert "TestProduct" in data["campaign_title"]
+    assert data["metrics_are_estimates"] is False
+
+
+def test_competitor_aliases():
+    response = client.post("/competitor-analysis", json={
+        "brandName": "NewBrand", "category": "Food", "region": "India"
+    })
+    assert response.status_code == 200
+    assert response.json()["data"]["brand_name"] == "NewBrand"

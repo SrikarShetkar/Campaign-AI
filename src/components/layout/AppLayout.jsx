@@ -20,6 +20,9 @@ export const AppLayout = () => {
     <div className="min-h-screen bg-[#0B0B0E] text-slate-100 flex flex-col font-sans">
       <Sidebar />
       <Navbar />
+      <div role="status" className={`relative z-20 px-6 py-2 text-xs text-[#704456] bg-[#FFF0F3] border-b border-[#EDD5DB] ${sidebarCollapsed ? 'ml-20' : 'ml-64'}`}>
+        Demo workspace: sample charts and competitor data are illustrative, not live performance measurements. Campaigns may use a template when the API is unavailable.
+      </div>
 
       <main
         className={`

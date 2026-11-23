@@ -40,9 +40,9 @@ class KnowledgeRetriever:
 
         # Retrieve from each knowledge domain
         similar_products = vector_store.search_similar(query, "products", top_k=3)
-        similar_campaigns = vector_store.search_similar(query, "campaigns", top_k=3)
-        persona_docs = vector_store.search_similar(query, "personas", top_k=3)
-        competitor_docs = vector_store.search_similar(query, "competitors", top_k=2)
+        similar_campaigns = vector_store.search_similar(query, "previous_campaigns", top_k=3)
+        persona_docs = vector_store.search_similar(query, "consumer_personas", top_k=3)
+        competitor_docs = vector_store.search_similar(query, "competitor_campaigns", top_k=2)
         framework_docs = vector_store.search_similar("", "marketing_frameworks", top_k=2)
         festival_docs = vector_store.search_similar(
             campaign_input.get("festival", campaign_input.get("season", "")),

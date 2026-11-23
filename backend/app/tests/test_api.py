@@ -33,7 +33,8 @@ def test_campaign_generator():
     data = resp.json()
     assert data["success"] is True
     assert "campaign_title" in data["data"]
-    assert "ai_confidence_score" in data["data"]
+    assert data["data"]["generation_mode"] == "template"
+    assert data["data"]["estimated_reach"] == "Not forecast"
     assert len(data["data"]["retrieved_sources"]) > 0
 
 def test_competitor_analysis():
@@ -81,12 +82,31 @@ def test_kb_status():
 
 def test_rebuild_index():
     resp = client.post("/rebuild-index")
-    assert resp.status_code == 200
-    data = resp.json()
-    assert data["success"] is True
+    assert resp.status_code == 403
 
 def test_analytics():
     resp = client.get("/analytics")
     assert resp.status_code == 200
     data = resp.json()
     assert data["success"] is True
+
+
+def test_campaign_input_aliases_reach_generator():
+    response = client.post("/campaign", json={
+        "brandName": "TestBrand", "productName": "TestProduct",
+        "category": "Food", "campaignGoal": "Awareness",
+        "budget": 1200, "festival": "Diwali"
+    })
+    assert response.status_code == 200
+    data = response.json()["data"]
+    assert "TestBrand" in data["campaign_title"]
+    assert "TestProduct" in data["campaign_title"]
+    assert data["metrics_are_estimates"] is True
+
+
+def test_competitor_aliases():
+    response = client.post("/competitor-analysis", json={
+        "brandName": "NewBrand", "category": "Food", "region": "India"
+    })
+    assert response.status_code == 200
+    assert response.json()["data"]["brand_name"] == "NewBrand"

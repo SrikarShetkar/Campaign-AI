@@ -6,6 +6,7 @@ from app.schemas.campaign_schemas import (
 )
 from app.rag.vector_store import vector_store
 from app.rag.llm_engine import llm_engine
+from app.rag.gemini_service import generate_gemini_campaign, GeminiGenerationError
 from app.rag.loader import loader
 
 from app.config.settings import settings
@@ -30,16 +31,17 @@ async def generate_campaign(payload: CampaignGeneratorInput):
         query = f"{data_dict.get('brand_name')} {data_dict.get('product')} {data_dict.get('product_category')} {data_dict.get('campaign_goal')} {data_dict.get('festival')}"
         retrieved_docs = vector_store.query_knowledge_base(query, top_k=5)
         
-        result = llm_engine.generate_campaign_rag(data_dict, retrieved_docs)
-        result["generation_mode"] = "template"
-        result["metrics_are_estimates"] = True
+        result = generate_gemini_campaign(data_dict, retrieved_docs)
         CAMPAIGN_HISTORY.append(result)
         
         return {
             "success": True,
-            "message": "AI Campaign Strategy successfully generated with RAG retrieval.",
+            "message": "Gemini campaign generated with retrieved knowledge context.",
             "data": result
         }
+    except GeminiGenerationError as exc:
+        logger.warning("Campaign provider unavailable: %s", type(exc).__name__)
+        raise HTTPException(status_code=503, detail="Campaign generation is temporarily unavailable") from exc
     except Exception as e:
         logger.error(f"Campaign generation error: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Campaign service error")

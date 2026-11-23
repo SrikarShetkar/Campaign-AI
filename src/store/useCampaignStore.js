@@ -1,7 +1,8 @@
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 import initialCampaigns from '../mock/campaigns.json';
 
-export const useCampaignStore = create((set, get) => ({
+export const useCampaignStore = create(persist((set) => ({
   campaigns: initialCampaigns,
   activeCampaign: initialCampaigns[0],
   
@@ -29,7 +30,7 @@ export const useCampaignStore = create((set, get) => ({
     brandTone: 'Sophisticated & Science-Backed',
     region: 'North America',
     competitors: 'Legacy Luxury Brands',
-    season: 'Summer 2026',
+    season: 'Current season',
     festival: 'International Skincare Month',
     notes: '',
   },
@@ -65,7 +66,7 @@ export const useCampaignStore = create((set, get) => ({
         brandTone: 'Sophisticated & Science-Backed',
         region: 'North America',
         competitors: 'Legacy Luxury Brands',
-        season: 'Summer 2026',
+        season: 'Current season',
         festival: 'International Skincare Month',
         notes: '',
       },
@@ -79,4 +80,4 @@ export const useCampaignStore = create((set, get) => ({
     })),
 
   setActiveCampaign: (campaign) => set({ activeCampaign: campaign }),
-}));
+}), { name: 'campaignmind-drafts-v1', partialize: state => ({ campaigns: state.campaigns, activeCampaign: state.activeCampaign }) }));

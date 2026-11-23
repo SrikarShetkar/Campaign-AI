@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCampaignStore } from '../../store/useCampaignStore';
 import { GlassCard } from '../../components/Cards/GlassCard';
@@ -10,7 +10,6 @@ import {
   FiSliders,
   FiTrendingUp,
   FiCheckCircle,
-  FiUploadCloud,
   FiArrowRight,
   FiArrowLeft,
   FiZap,
@@ -19,7 +18,14 @@ import {
 export const CampaignGenerator = () => {
   const navigate = useNavigate();
   const { wizardStep, setWizardStep, wizardData, updateWizardData } = useCampaignStore();
-  const [uploadedFileName, setUploadedFileName] = useState('');
+  const readiness = [
+    { label: 'Brand name', ok: Boolean(wizardData.brandName.trim()) },
+    { label: 'Product name', ok: Boolean(wizardData.productName.trim()) },
+    { label: 'Unique value proposition', ok: Boolean(wizardData.usp.trim()) },
+    { label: 'Audience problem', ok: Boolean(wizardData.painPoints.trim()) },
+    { label: 'Positive budget', ok: Number(String(wizardData.budget).replace(/[^\d.]/g, '')) > 0 },
+  ];
+  const readinessCount = readiness.filter(item => item.ok).length;
 
   const steps = [
     { id: 1, name: 'Product Info', icon: FiPackage },
@@ -33,19 +39,13 @@ export const CampaignGenerator = () => {
     if (wizardStep < 5) {
       setWizardStep(wizardStep + 1);
     } else {
-      navigate('/processing');
+      if (readiness.every(item => item.ok)) navigate('/processing');
     }
   };
 
   const handleBack = () => {
     if (wizardStep > 1) {
       setWizardStep(wizardStep - 1);
-    }
-  };
-
-  const handleFileUpload = (e) => {
-    if (e.target.files && e.target.files[0]) {
-      setUploadedFileName(e.target.files[0].name);
     }
   };
 
@@ -388,19 +388,6 @@ export const CampaignGenerator = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="border border-[#EDD5DB] rounded-2xl p-4 bg-[#FFF8F8] text-center cursor-pointer">
-                <FiUploadCloud className="w-6 h-6 text-[#A96A80] mx-auto mb-1" />
-                <div className="text-xs font-semibold text-[#4A2E38]">Upload Past Campaign Report</div>
-                <div className="text-[10px] text-[#A08A92]">PDF, CSV, PPTX up to 50MB</div>
-              </div>
-
-              <div className="border border-[#EDD5DB] rounded-2xl p-4 bg-[#FFF8F8] text-center cursor-pointer">
-                <FiUploadCloud className="w-6 h-6 text-[#A96A80] mx-auto mb-1" />
-                <div className="text-xs font-semibold text-[#4A2E38]">Upload Brand Guideline PDF</div>
-                <div className="text-[10px] text-[#A08A92]">Auto-detect tone & colors</div>
-              </div>
-            </div>
           </div>
         )}
 
@@ -444,13 +431,22 @@ export const CampaignGenerator = () => {
           </div>
         )}
 
+        {wizardStep === 5 && (
+          <div className="rounded-2xl border border-[#EDD5DB] p-5 bg-[#FFF8F8]" aria-live="polite">
+            <h4 className="font-bold text-[#4A2E38]">Brief readiness: {readinessCount}/{readiness.length}</h4>
+            <p className="text-xs text-[#7D6670] mt-1">Checks input completeness, not predicted campaign effectiveness.</p>
+            <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {readiness.map(item => <li key={item.label} className="text-sm text-[#4A2E38]">{item.ok ? '✓' : '○'} {item.label}</li>)}
+            </ul>
+          </div>
+        )}
         {/* Navigation Control Buttons */}
         <div className="flex items-center justify-between pt-6 border-t border-[#EDD5DB]">
           <SecondaryButton icon={FiArrowLeft} onClick={handleBack} className={wizardStep === 1 ? 'opacity-0 pointer-events-none' : ''}>
             Previous Step
           </SecondaryButton>
 
-          <PrimaryButton icon={wizardStep === 5 ? FiZap : FiArrowRight} onClick={handleNext}>
+          <PrimaryButton icon={wizardStep === 5 ? FiZap : FiArrowRight} onClick={handleNext} disabled={wizardStep === 5 && readinessCount !== readiness.length}>
             {wizardStep === 5 ? 'Generate Enterprise Campaign' : 'Next Step'}
           </PrimaryButton>
         </div>

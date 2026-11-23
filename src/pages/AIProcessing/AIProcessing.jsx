@@ -8,7 +8,7 @@ import { useCampaignStore } from '../../store/useCampaignStore';
 import { campaignService } from '../../services/campaignService';
 import {
   FiSearch, FiTrendingUp, FiFeather, FiEdit3,
-  FiDollarSign, FiCpu, FiArrowRight, FiAlertCircle,
+  FiDollarSign, FiCpu, FiAlertCircle,
 } from 'react-icons/fi';
 
 export const AIProcessing = () => {
@@ -74,7 +74,7 @@ export const AIProcessing = () => {
             AI Agent <span className="text-gradient-rose">Orchestration</span>
           </h1>
           <p className="text-[#7D6670] text-sm max-w-md mx-auto">
-            6 specialized neural agents are collaborating to build your enterprise campaign blueprint using RAG + Multi-Agent AI.
+            Preparing your campaign blueprint. These workflow stages are illustrative, not live agent telemetry.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ export const AIProcessing = () => {
             />
           </div>
           <div className="flex items-center justify-between mt-2 text-[10px] text-[#A08A92]">
-            <span>RAG Knowledge Retrieval Active</span>
+            <span>Illustrative progress display</span>
             <span>{isComplete ? '✓ All Agents Complete' : `Agent ${Math.min(activeStep + 1, agents.length)} of ${agents.length} Running`}</span>
           </div>
         </GlassCard>
@@ -123,14 +123,6 @@ export const AIProcessing = () => {
           })}
         </div>
 
-        {/* Manual skip */}
-        {!isComplete && (
-          <div className="text-center pt-2">
-            <PrimaryButton icon={FiArrowRight} onClick={() => navigate('/result')}>
-              View Campaign Result Now
-            </PrimaryButton>
-          </div>
-        )}
       </div>
     </div>
   );

@@ -1,47 +1,44 @@
-# CampaignMind AI
+# CampaignMind AI — Campaign Studio
 
-An Enterprise AI-Driven Marketing & Campaign Intelligence Platform built with React, FastAPI, and Retrieval-Augmented Generation (RAG).
+A React/Vite frontend and optional FastAPI backend for creating **illustrative CPG marketing campaign drafts**.
 
----
+## Current capabilities
 
-## Overview
+- Five-step campaign brief with an input-completeness readiness check
+- Campaign drafts and channel copy with browser-local saved history
+- Competitor and sales examples, using **sample data** rather than verified market intelligence
+- Campaign export formats (requires the backend for PDF/DOCX/CSV generation)
+- Optional backend with TF-IDF retrieval and template-driven campaign generation
 
-**CampaignMind AI** empowers marketing teams to streamline campaign creation, analyze target personas, evaluate competitors, and optimize sales strategies using multi-agent AI workflows and custom knowledge bases.
+**Important:** The fallback is a template, not an LLM response. The current backend campaign endpoint also uses a template function even if an OpenAI key is configured. ROI, reach, market, and engagement figures are not empirical predictions. The processing screen illustrates stages, not actual concurrent agents.
 
----
+## Frontend deployment on Vercel
 
-## Key Features
+1. Import this repository with the Vite preset; build with `npm run build` to `dist`.
+2. Leave `VITE_API_BASE_URL` unset for a frontend-only demonstration.
+3. For a real API, separately host the FastAPI backend and set `VITE_API_BASE_URL` to its HTTPS public origin, then redeploy.
+4. Set backend `CORS_ORIGINS` to your exact Vercel frontend origin.
 
-- **Automated Campaign Generation:** Build end-to-end multi-channel marketing campaigns powered by domain-specific LLM prompts.
-- **RAG & Knowledge Base Integration:** Leverage brand guidelines, consumer personas, festival calendars, and marketing frameworks for personalized context.
-- **Competitor & Market Intelligence:** Analyze competitive landscapes and trend metrics to refine position strategies.
-- **Analytics & Sales Simulator:** Simulate campaign outcomes and evaluate key performance metrics before launch.
-- **Export Center:** Generate and export detailed campaign reports across standard formats.
+## Local development
 
----
-
-## Tech Stack
-
-### Frontend
-- **Framework:** React + Vite
-- **Styling:** Tailwind CSS + PostCSS
-- **State Management:** Zustand
-
-### Backend
-- **Framework:** Python (FastAPI)
-- **AI & RAG Orchestration:** Vector store retriever, prompt builder, custom LLM engine
-- **Containerization:** Docker & Docker Compose
-
----
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v18+) & `npm`
-- Python (v3.10+)
-- Docker & Docker Compose (optional)
-
-### 1. Repository Setup
 ```bash
-git clone [https://github.com/SrikarShetkar/Campaign-AI.git](https://github.com/SrikarShetkar/Campaign-AI.git)
-cd Campaign-AI
+npm ci
+npm run dev
+```
+
+For the optional API, run from `backend/`:
+
+```bash
+python -m pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Set `VITE_API_BASE_URL=http://localhost:8000` in `.env.local` to use the local API.
+
+## Limitations
+
+- No live ads, social publishing, campaign attribution, real-time market feeds, authentication, or verified commercial forecasts.
+- Browser drafts are local to the device; clear site data to remove them.
+- Uploads are currently stored only, not semantically analyzed or used to train models.
+- Do not place API secrets in Vite environment variables.
+- Secure or disable administrative and upload endpoints before exposing the backend publicly.

@@ -13,9 +13,12 @@ async def upload_brand_guidelines(file: UploadFile = File(...)):
     if file.content_type not in ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "text/plain"]:
         raise HTTPException(status_code=400, detail="Only PDF, DOCX, and TXT files are supported.")
     
-    save_path = os.path.join(UPLOAD_DIR, f"brand_guideline_{file.filename}")
+    from uuid import uuid4
+    save_path = os.path.join(UPLOAD_DIR, f"brand_guideline_{uuid4().hex}")
+    content = await file.read(5 * 1024 * 1024 + 1)
+    if len(content) > 5 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail="Maximum upload size is 5 MB.")
     with open(save_path, "wb") as f:
-        content = await file.read()
         f.write(content)
 
     # Brand Learning Agent — analyze the uploaded file
@@ -31,13 +34,16 @@ async def upload_brand_guidelines(file: UploadFile = File(...)):
 @router.post("/upload-campaigns")
 async def upload_campaign_examples(file: UploadFile = File(...)):
     """Upload past campaign reports to enrich the knowledge base."""
-    save_path = os.path.join(UPLOAD_DIR, f"campaign_{file.filename}")
+    from uuid import uuid4
+    save_path = os.path.join(UPLOAD_DIR, f"campaign_{uuid4().hex}")
+    content = await file.read(5 * 1024 * 1024 + 1)
+    if len(content) > 5 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail="Maximum upload size is 5 MB.")
     with open(save_path, "wb") as f:
-        content = await file.read()
         f.write(content)
     return {
         "success": True,
-        "message": f"Campaign file '{file.filename}' uploaded and indexed into knowledge base.",
+        "message": f"Campaign file '{file.filename}' uploaded for review. It has not been indexed.",
     }
 
 

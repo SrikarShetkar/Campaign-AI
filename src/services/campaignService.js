@@ -42,6 +42,7 @@ export const campaignService = {
     };
 
     try {
+      if (!import.meta.env.VITE_API_BASE_URL) throw new Error('Demo mode: backend not configured');
       const res = await api.post('/campaign', payload);
       const backendData = res.data.data;
       return this._normalizeCampaign(backendData, wizardData);
@@ -50,7 +51,7 @@ export const campaignService = {
       const estimatedReachVal = `${(budgetNum * 14).toLocaleString()} Impressions`;
       const customCampaign = {
         id: `cmp-${Date.now()}`,
-        status: 'Active',
+        status: 'Draft',
         createdAt: new Date().toISOString().split('T')[0],
         name: `${brandName} x ${festival}: ${productName} Campaign`,
         title: `${brandName} x ${festival}: ${productName} Campaign`,
@@ -62,13 +63,13 @@ export const campaignService = {
         tagline: usp ? `Powered by ${usp}` : `${tone} Efficacy for ${category}.`,
         executiveSummary: wizardData.description || `High-conversion marketing campaign for ${brandName}'s ${productName} targeting ${audience} in ${region} during ${season}.`,
         campaign_strategy: wizardData.description || `High-conversion marketing campaign for ${brandName}'s ${productName} targeting ${audience} in ${region} during ${season}.`,
-        campaignScore: 96,
-        trendScore: 95,
-        virality: 94,
-        projectedRoi: '5.2x',
-        roi: '5.2x',
-        targetReach: estimatedReachVal,
-        estimated_reach: estimatedReachVal,
+        campaignScore: null,
+        trendScore: null,
+        virality: null,
+        projectedRoi: 'Not forecast',
+        roi: 'Not forecast',
+        targetReach: 'Not forecast',
+        estimated_reach: 'Not forecast',
         budget_input: budgetRaw.includes('$') ? budgetRaw : `$${budgetNum.toLocaleString()}`,
         budget: budgetRaw.includes('$') ? budgetRaw : `$${budgetNum.toLocaleString()}`,
         duration: duration,
@@ -108,10 +109,8 @@ export const campaignService = {
           `Allocate 40% of campaign budget to short-form UGC video on TikTok & Instagram Reels.`,
           `Highlight "${usp}" across all ad creative hooks to maximize conversion rate.`
         ],
-        retrieved_sources: [
-          { source_file: 'products.json', similarity_score: 0.95, snippet: `${brandName} ${productName} formulation & benchmark data...` },
-          { source_file: 'consumer_personas.json', similarity_score: 0.91, snippet: `Persona profiles for ${audience} in ${region}...` }
-        ]
+        generation_mode: 'demo_template',
+        retrieved_sources: []
       };
       return customCampaign;
     }
@@ -125,7 +124,7 @@ export const campaignService = {
 
     return {
       id: data.id || `cmp-${Date.now()}`,
-      status: 'Active',
+      status: 'Draft',
       createdAt: new Date().toISOString().split('T')[0],
       name: data.campaign_title || `${brandName} ${productName} Campaign`,
       title: data.campaign_title || `${brandName} ${productName} Campaign`,
@@ -137,9 +136,9 @@ export const campaignService = {
       tagline: data.marketing_angle || 'Radiate Elegance. Clinical Efficacy & Purity.',
       executiveSummary: data.campaign_strategy || `High-conversion marketing campaign for ${brandName} ${productName}.`,
       campaign_strategy: data.campaign_strategy || `High-conversion marketing campaign for ${brandName} ${productName}.`,
-      campaignScore: 96,
-      trendScore: 95,
-      virality: 94,
+      campaignScore: null,
+      trendScore: null,
+      virality: null,
       projectedRoi: data.kpis?.target_roi || '5.2x',
       roi: data.kpis?.target_roi || '5.2x',
       targetReach: data.estimated_reach || '1.5M Impressions',
@@ -159,6 +158,7 @@ export const campaignService = {
       posterPrompt: `Hyper-realistic product photograph of ${brandName} ${productName}.`,
       videoPrompt: `15-second macro video of ${productName}.`,
       suggestions: data.customer_insights || ['Optimize video allocation for TikTok Reels.'],
+      generation_mode: data.generation_mode || 'backend_template',
       retrieved_sources: data.retrieved_sources || []
     };
   },

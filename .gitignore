@@ -32,3 +32,5 @@ backend/app/rag/faiss_cache.pkl
 backend/app/rag/kb_hash.txt
 __pycache__/
 .pytest_cache/
+
+backend/app/rag/tfidf_index.json

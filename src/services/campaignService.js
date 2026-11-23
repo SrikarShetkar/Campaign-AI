@@ -21,7 +21,11 @@ export const campaignService = {
         Duration: campaign.duration,
       });
       const quote = value => '"' + String(value ?? '').replaceAll('"', '""') + '"';
-      blob = new Blob([['Field', 'Value'].map(quote).join(','), ...rows.map(row => row.map(quote).join(','))].join('\r\n')], { type: 'text/csv' });
+      const csv = [
+        ['Field', 'Value'].map(quote).join(','),
+        ...rows.map(row => row.map(quote).join(',')),
+      ].join(String.fromCharCode(13, 10));
+      blob = new Blob([csv], { type: 'text/csv' });
     } else {
       if (!import.meta.env.VITE_API_BASE_URL) throw new Error('PDF and DOCX require a connected backend');
       const response = await api.post('/api/v1/export-campaign', { campaign, format }, { responseType: 'blob' });

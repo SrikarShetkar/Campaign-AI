@@ -10,37 +10,13 @@ from app.config.settings import settings
 
 class LLMEngine:
     def __init__(self):
-        self.use_openai = bool(settings.OPENAI_API_KEY and settings.OPENAI_API_KEY != "your-openai-api-key-here")
-        self._client = None
-        if self.use_openai:
-            try:
-                from openai import OpenAI
-                self._client = OpenAI(api_key=settings.OPENAI_API_KEY)
-            except Exception:
-                self.use_openai = False
+        # Legacy template engine is used by competitor/sales routes and the
+        # currently unexposed orchestrator. Gemini powers /campaign separately.
+        self.use_openai = False
 
     def generate(self, prompt: str, json_mode: bool = True) -> Dict[str, Any] | str:
-        if self.use_openai and self._client:
-            return self._call_openai(prompt, json_mode)
+        # Retained only for legacy/unexposed orchestration; not Gemini output.
         return self._deterministic_mock(prompt)
-
-    def _call_openai(self, prompt: str, json_mode: bool) -> Dict[str, Any]:
-        try:
-            response = self._client.chat.completions.create(
-                model=settings.LLM_MODEL,
-                response_format={"type": "json_object"} if json_mode else None,
-                messages=[
-                    {"role": "system", "content": "You are an enterprise AI marketing strategist for CPG brands. Always respond with valid structured JSON."},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.75,
-                max_tokens=3500,
-            )
-            content = response.choices[0].message.content
-            return json.loads(content) if json_mode else content
-        except Exception as e:
-            print(f"[LLM] OpenAI call failed: {e}. Falling back to mock engine.")
-            return self._deterministic_mock(prompt)
 
     def generate_campaign_rag(self, payload: Dict[str, Any], retrieved_sources: List[Dict[str, Any]]) -> Dict[str, Any]:
         brand = payload.get("brand_name", "AuraPure")

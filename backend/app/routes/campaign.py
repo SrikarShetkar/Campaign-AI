@@ -9,7 +9,6 @@ from app.rag.llm_engine import llm_engine
 from app.rag.loader import loader
 
 from app.config.settings import settings
-from fastapi import Request
 
 def require_admin(x_admin_key: str | None = Header(default=None)):
     if not settings.ADMIN_API_KEY or x_admin_key != settings.ADMIN_API_KEY:
@@ -27,11 +26,13 @@ CAMPAIGN_HISTORY: List[Dict[str, Any]] = []
 async def generate_campaign(payload: CampaignGeneratorInput):
     """Feature 1 — AI Marketing Campaign Generator backed by RAG RetrievalQA."""
     try:
-        data_dict = payload.model_dump(by_alias=True)
+        data_dict = payload.model_dump(by_alias=False)
         query = f"{data_dict.get('brand_name')} {data_dict.get('product')} {data_dict.get('product_category')} {data_dict.get('campaign_goal')} {data_dict.get('festival')}"
         retrieved_docs = vector_store.query_knowledge_base(query, top_k=5)
         
         result = llm_engine.generate_campaign_rag(data_dict, retrieved_docs)
+        result["generation_mode"] = "template"
+        result["metrics_are_estimates"] = True
         CAMPAIGN_HISTORY.append(result)
         
         return {
@@ -41,7 +42,7 @@ async def generate_campaign(payload: CampaignGeneratorInput):
         }
     except Exception as e:
         logger.error(f"Campaign generation error: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail="Campaign service error")
 
 
 @router.post("/competitor-analysis")
@@ -49,7 +50,7 @@ async def generate_campaign(payload: CampaignGeneratorInput):
 async def analyze_competitors(payload: CompetitorAnalyzerInput):
     """Feature 2 — Brand Competitor Analyzer with SWOT & Recommendations."""
     try:
-        data_dict = payload.model_dump(by_alias=True)
+        data_dict = payload.model_dump(by_alias=False)
         query = f"competitor {data_dict.get('brand_name')} {data_dict.get('category')} {data_dict.get('region')}"
         retrieved_docs = vector_store.query_knowledge_base(query, category_filter="competitor_campaigns", top_k=5)
         if not retrieved_docs:
@@ -71,7 +72,7 @@ async def analyze_competitors(payload: CompetitorAnalyzerInput):
 async def optimize_sales(payload: SalesOptimizerInput):
     """Feature 3 — Sales & Discount Optimizer with inventory reduction & ROI graph data."""
     try:
-        data_dict = payload.model_dump(by_alias=True)
+        data_dict = payload.model_dump(by_alias=False)
         query = f"sales pricing discount {data_dict.get('product')} {data_dict.get('campaign_goal')}"
         retrieved_docs = vector_store.query_knowledge_base(query, category_filter="sales_history", top_k=5)
         if not retrieved_docs:
@@ -166,7 +167,7 @@ async def rebuild_index(_: None = Depends(require_admin)):
             "data": {"total_documents": len(vector_store.documents), "kb_hash": vector_store.current_hash}
         }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Index rebuild failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Index rebuild failed")
 
 
 @router.get("/campaign-history")
